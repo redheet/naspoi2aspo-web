@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "icon": "fas fa-users",
+    "title": "Active Participant",
+    "value": 96327,
+    "valuetwo": 365
+  },
+  {
+    "id": 2,
+    "icon": "fas fa-file-alt",
+    "title": "Project Registered",
+    "value": 78630,
+    "valuetwo": 82
+  },
+  {
+    "id": 3,
+    "icon": "fas fa-cloud-download-alt",
+    "title": "Affiliation",
+    "value": 56326,
+    "valuetwo": 40
+  },
+  {
+    "id": 4,
+    "icon": "fas fa-gem",
+    "title": "5 Star Rating Reviews",
+    "value": 63020,
+    "valuetwo": 28
+  }
+]

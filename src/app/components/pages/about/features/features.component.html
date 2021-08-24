@@ -1,0 +1,33 @@
+<section class="our-services border-top-blue pt-130 pb-90">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="section-title text-center mb-70">
+                    <div class="section-heading-tag">
+                        <span class="single-heading-tag">Popular Services</span>
+                    </div>
+                    <h2>Made Amazing Mobile Application <br class="d-none d-md-block"> With Our Solutions</h2>
+                </div>
+            </div> <!-- /.col-lg-8 -->
+        </div> <!-- /.row -->
+        <div class="our-services-content-wrapper">
+            <div class="row">
+                <!-- /.col-lg-6-->
+                <div class="col-xl-3 col-lg-6" *ngFor="let item of features | slice:0:4">
+                    <div class="single-iconic-box iconic-box-v4 wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="2000ms">
+                        <div class="iconic-box-icon" [ngClass]="item.boxstyle">
+                            <i [class]="item.icon"></i>
+                        </div>
+                        <div class="iconic-box-body">
+                            <h5 class="iconic-box-title">{{item.title}}</h5>
+                            <p class="iconic-box-content">
+                                {{item.text}}
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+                <!-- /.col-lg-6-->
+            </div> <!-- /.row -->
+        </div> <!-- /.our-services-content-wrapper -->
+    </div> <!-- /.container -->
+</section>

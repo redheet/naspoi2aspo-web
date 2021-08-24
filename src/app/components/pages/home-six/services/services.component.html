@@ -1,0 +1,26 @@
+<section class="our-services-area pt-95 pb-130">
+    <div class="container">
+        <div class="row">
+            <!-- Data -->
+            <div class="col-lg-4 col-md-6" *ngFor="let item of serviceblock | slice:0:6">
+                <div class="single-iconic-box iconic-box-v5 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1500ms">
+                    <div class="iconic-box-icon">
+                        <i [class]="item.icon"></i>
+                    </div>
+                    <div class="iconic-box-body">
+                        <h5 class="iconic-box-title">{{item.title}}</h5>
+                        <p class="iconic-box-content">
+                            {{item.shorttext | slice:0:80}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Data -->
+        </div> <!-- /.row -->
+        <div class="view-more-btn-wrapper text-center mt-20 wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="1500ms">
+            <a routerLink="/services" class="filled-btn btn-bordered bg-clear-blue">
+                View All Services <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div> <!-- /.container -->
+</section>

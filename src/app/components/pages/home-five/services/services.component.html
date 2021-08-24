@@ -1,0 +1,36 @@
+<section class="our-services our-services-v2 bg-white-lilac pt-122 pb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center mb-70">
+                    <h2>Popular Services</h2>
+                    <div class="section-title-description">
+                        <p>Sed perspicias unde omnis iste natus error voluptatem accusantium dolorem laudanme totam rem aperiam eaque quae.</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.row -->
+        <div class="row">
+            <!-- Data -->
+            <div class="col-lg-3 col-md-6" *ngFor="let item of serviceblock | slice:0:4">
+                <div class="single-info-box wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1500ms">
+                    <div class="infobox-thumbnail">
+                        <a routerLink="/service-details/{{item.id}}">
+                            <img [src]="item.image" [alt]="item.title">
+                        </a>
+                    </div>
+                    <div class="infobox-body">
+                        <h5 class="infobox-title">
+                            <a routerLink="/service-details/{{item.id}}">{{item.title}}</a>
+                        </h5>
+                        <p class="infobox-excerpt">{{item.shorttext | slice:0:45}}</p>
+                        <div class="infobox-btn">
+                            <a routerLink="/service-details/{{item.id}}">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Data -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>

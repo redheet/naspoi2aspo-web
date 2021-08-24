@@ -1,0 +1,186 @@
+.slick-dots{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.slick-dots li{
+    position: relative;
+    cursor: pointer;
+}
+.slick-dots li button{
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+}
+.single-testimonial.single-testimonial-v6 .testimonial-author-quote img,
+.single-testimonial .testimonial-author img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.btn-link:hover{
+    text-decoration: none;
+}
+.btn.focus, .btn:focus{
+    box-shadow: none;
+    text-decoration: none;
+}
+.section-accordion .card{
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+.section-accordion .card .card-header {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'CircularStdBold';
+    font-weight: 700;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+.section-accordion .card .card-header .btn-link{
+    color: #1a1b1e;
+}
+.single-testimonial .rating-review li .main-rating i {
+    color: #ECEBFD;
+}
+.single-testimonial .rating-review li .main-rating i.active {
+    color: #FFA800;
+}
+.single-iconic-box.iconic-box-v5 .iconic-box-icon i{
+    color: #3377FF;
+    display: flex;
+    font-size: 60px;
+}
+.single-feature-box.single-feature-box-v3 .feature-box-content h4 a:hover{
+    color:#fff;
+}
+.skill-list .single-bar .progress-title h5>span:after{
+    content: '%';
+}
+.shadow-template{
+    box-shadow: 0px 10px 30px 0px rgb(235 235 235);
+}
+.blog-post-item.blog-post-item-v3.post-type-featured-absolute .post-excerpt{
+    display: none;
+}
+.posts-sidebar .widget.latest-post-widget .popular-posts-item .popular-posts-thumbnail img {
+    width: 75px;
+    height: 70px;
+    object-fit: cover;
+}
+.single-testimonial.single-testimonial-v4 .testimonial-author img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.blog-details-wrapper .post-author-box .post-author-thumbnail img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+.blog-post-item.blog-post-item-v2 .blog-post-entry-content .post-author .post-author-thumb img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.single-footer-widget .footer-app-download .filled-btn{
+    margin-right: 10px;
+}
+.skill-list .single-bar .progress{
+    background-color: #e9ecef;
+}
+@media (max-width:991px) {
+    .mb-md-80{
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 480px){
+    .blog-details-wrapper .post-author-box .post-author-thumbnail img{
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Pagination */
+pagination-template .ngx-pagination {
+	margin: 80px 0 0rem;
+	justify-content: center;
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+    flex-wrap: wrap;
+}
+pagination-template .ngx-pagination li {
+	margin: 0;
+	position: relative;
+    margin-bottom: 10px!important;
+}
+pagination-template .ngx-pagination li.pagination-next, pagination-template .ngx-pagination li.pagination-previous {
+	padding: 0;
+	display: block;
+}
+pagination-template .ngx-pagination li.pagination-next span, pagination-template .ngx-pagination li.pagination-previous span, pagination-template .ngx-pagination li a {
+	color: #161c2d;
+	border: 2px solid #E8E9EC;
+	background-color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+    padding: 0 !important;
+	position: relative;
+	margin-left: 10px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	line-height: 1.5;
+    border-radius: 5px;
+    font-family: 'CircularStdBold';
+    width: 50px;
+    height: 50px;
+}
+pagination-template .ngx-pagination li.current {
+	color: #fff;
+	border: 2px solid #473BF0;
+	background-color: #473BF0; 
+	font-size: 18px;
+	font-weight: 700;
+    padding: 0 !important;
+	position: relative;
+	margin-left: 10px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	line-height: 1.5;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px 0px rgb(71 59 240 / 50%);
+    font-family: 'CircularStdBold';
+    width: 50px;
+    height: 50px;
+}
+pagination-template .ngx-pagination li.pagination-next::after, pagination-template .ngx-pagination li.pagination-next a:after, pagination-template .ngx-pagination li.pagination-previous a::before, pagination-template .ngx-pagination li.pagination-previous::before {
+	display: none!important;
+}
+pagination-template .ngx-pagination li.pagination-previous a,
+pagination-template .ngx-pagination li.pagination-previous span{
+    margin: 0;
+}
+@media (max-width: 600px){
+    pagination-template .ngx-pagination{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .ngx-pagination.responsive .small-screen{
+        display: none!important;
+    }
+    .ngx-pagination.responsive li:not(.small-screen):not(.pagination-previous):not(.pagination-next) {
+        display: flex!important;
+    }
+}

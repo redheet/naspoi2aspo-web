@@ -1,0 +1,35 @@
+<section class="our-services pt-216 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title mb-135 text-center section-title-tuna">
+                    <h2>Made Amazing Mobile Application <br class="d-none d-md-block"> With <span>Our Solutions</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="section-right-image text-center animate-float-bob-y wow fadeInDown" data-wow-delay="0ms" data-wow-duration="2000ms">
+                    <img src="assets/img/services/service-image.png" alt="service left thumbnail">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="icon-boxes-wrapper icon-boxes-grid">
+                    <!-- Data -->
+                    <div class="single-iconic-box iconic-box-v2" *ngFor="let item of features | slice:0:4">
+                        <div class="iconic-box-icon" [ngClass]="item.boxstyle">
+                            <i [class]="item.icon"></i>
+                        </div>
+                        <div class="iconic-box-body">
+                            <h5 class="iconic-box-title">{{item.title}}</h5>
+                            <p class="iconic-box-content">
+                                {{item.text}}
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Data -->
+                </div>
+            </div>
+        </div> <!-- /,row -->
+    </div> <!-- /.container -->
+</section>

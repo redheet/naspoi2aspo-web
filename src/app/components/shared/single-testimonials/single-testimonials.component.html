@@ -1,0 +1,11 @@
+<ngx-slick-carousel [config]="settings" class="testimonial-slider testimonial-slider-v4" id="testimonial-slider-v3">
+    <!-- Single Testimonial -->
+    <div class="single-testimonial single-testimonial-v4" ngxSlickItem *ngFor="let item of testimonials">
+        <p>{{item.comment | slice:0:110}}...</p>
+        <div class="testimonial-author" *ngFor="let author of getAuthor(item.author)">
+            <img [src]="author.image" [alt]="author.name">
+            <h6>{{author.name}} <span>{{author.post}}</span></h6>
+        </div>
+    </div>
+    <!-- Single Testimonial -->
+</ngx-slick-carousel>

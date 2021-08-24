@@ -1,0 +1,35 @@
+<div class="contact-form-area content-right-spacer">
+    <div class="section-title mb-40">
+        <div class="section-heading-tag">
+            <span class="single-heading-tag">Send Us Message</span>
+        </div>
+        <h2>Have Any Questions ? <br class="d-none d-md-block"> Let’s Start to Talk</h2>
+    </div>
+    <div class="contact-respond">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Full Name" formControlName="fullname">
+                <label for="fullName">Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Phone Number" formControlName="phoneno">
+                <label for="phoneNumber">Phone</label>
+            </div>
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Email Address" formControlName="email">
+                <label for="emailAddress">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="I Would Like  To Discuse" formControlName="subject">
+                <label for="subject">Subject</label>
+            </div>
+            <div class="input-group form-textarea">
+                <textarea class="form-control" placeholder="Message" formControlName="message"></textarea>
+                <label for="message">Message</label>
+            </div>
+            <div class="input-group">
+                <button type="submit" class="filled-btn" [disabled]="!contactForm.valid">Send Message <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </form>
+    </div> <!-- /.contact-respond -->
+</div>

@@ -1,0 +1,34 @@
+<section class="features-area">
+    <div class="container">
+        <div class="section-internal pt-120 pb-75 border-bottom-purple">
+            <div class="section-title mb-126 text-center section-title-mirage">
+                <div class="section-heading-tag">
+                    <span class="single-heading-tag">How Can Help You</span>
+                </div>
+                <h2>Check Out <span>Exclusive</span> Features</h2>
+            </div>
+            <div class="icon-boxes-wrapper">
+                <div class="row">
+                    <!-- Data -->
+                    <div class="col-lg-3 col-md-6" *ngFor="let item of workprocess">
+                        <div class="single-iconic-box iconic-box-v3 wow fadeInUp" [ngClass]="item.boxstyle" data-wow-delay="0.4s">
+                            <div class="iconic-box-icon">
+                                <img [src]="item.icon" [alt]="item.title">
+                            </div>
+                            <div class="iconic-box-body">
+                                <h5 class="iconic-box-title">{{item.title}}</h5>
+                                <p class="iconic-box-content">
+                                    {{item.text}}
+                                </p>
+                                <div class="iconic-box-btn">
+                                    <a routerLink="/contact"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Data -->
+                </div> <!-- /.row -->
+            </div> <!-- /.icon-boxes-wrapper -->
+        </div> <!-- /.section-internal -->
+    </div> <!-- /.container -->
+</section>

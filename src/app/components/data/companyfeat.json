@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Team Management",
+        "icon": "far fa-user-chart",
+        "text": "Sed ut perspiciatis unde este error voluptate accus antium doloremque",
+        "boxstyle": "iconic-box-gradient-3",
+        "image":"assets/img/services/service-thumbnail-7.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Time Tracking",
+        "icon": "far fa-compass",
+        "text": "Sed ut perspiciatis unde este error voluptate accus antium doloremque",
+        "boxstyle": "iconic-box-gradient-4",
+        "image":"assets/img/services/service-thumbnail-8.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Payment System",
+        "icon": "far fa-squirrel",
+        "text": "Sed ut perspiciatis unde este error voluptate accus antium doloremque",
+        "boxstyle": "iconic-box-gradient-5",
+        "image":"assets/img/services/service-thumbnail-9.jpg"
+    },
+    {
+        "id": 4,
+        "title": "High Security",
+        "icon": "far fa-fingerprint",
+        "text": "Sed ut perspiciatis unde este error voluptate accus antium doloremque",
+        "boxstyle": "iconic-box-gradient-6",
+        "image":"assets/img/services/service-thumbnail-10.jpg"
+    }
+]

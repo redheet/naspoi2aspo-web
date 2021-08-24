@@ -1,0 +1,97 @@
+<footer class="footer-area footer-area-v3">
+  <div class="container">
+    <div class="footer-area-internal border-bottom-purple">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="single-footer-widget footer-text-widget">
+            <h5 class="widget-title">About I2aspo</h5>
+            <p>
+              Research is quite important because it is able to create solutions
+              to problems that occur today.
+            </p>
+            <div class="footer-social-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Single Footer Widget -->
+        <div
+          class="col-lg-3 col-md-6 wow fadeInUp"
+          data-wow-delay="0.3s"
+          *ngFor="let data of links"
+        >
+          <div class="single-footer-widget">
+            <h5 class="widget-title">{{ data.title }}</h5>
+            <div class="footer-widget-menu">
+              <ul>
+                <li *ngFor="let item of data.items">
+                  <a routerLink="{{ item.link }}">{{ item.title }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Single Footer Widget -->
+        <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="single-footer-widget follow-on-widget">
+                        <h5 class="widget-title">Download</h5>
+                        <div class="footer-app-download">
+                            <a routerLink="/services" class="filled-btn bg-purple button-radius">
+                                Apple More <i class="fab fa-apple"></i>
+                            </a>
+                            <a routerLink="/services" class="filled-btn bg-blue-chalk button-radius">
+                                Google Play <i class="fab fa-google-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.footer-area-internal -->
+  </div>
+  <!-- /.container -->
+  <div class="footer-copyright-area wow fadeInDown" data-wow-delay="0.8s">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-4">
+          <div class="footer-logo">
+            <img src="assets/img/i2aspo-logo.png" alt="footer logo" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-8">
+          <div class="footer-copyright">
+            <p>© 2021 <a href="#">I2aspo.</a> All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.footer-copyright-area -->
+</footer>
+<a
+  href="javascript:void(0)"
+  [ngClass]="windowScrolled ? 'd-inline-block' : ''"
+  (click)="scrollToTop()"
+  class="scroll-to-target scroll-to-top bg-red"
+  ><i class="fa fa-angle-up"></i
+></a>

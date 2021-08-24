@@ -1,0 +1,88 @@
+<header class="header-area header-v2">
+    <div class="header-navigation" [ngClass]="[visible ? '' : 'breakpoint-on' , windowScrolled ? 'sticky':'']"
+        (window:resize)="detectHeader()">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Brand Logo -->
+                <div class="col-xl-2 col-md-3 col-6">
+                    <div class="site-branding-and-language-selection">
+                        <div class="brand-logo">
+                            <a routerLink="/">
+                                <img src="assets/img/logo-white.png" alt="logo white" class="logo-v1">
+                                <img src="assets/img/logo-yellow.png" alt="logo yellow" class="logo-v2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desktop and Mobile Menu -->
+                <div class="col-xl-10 col-md-9 col-6 text-center">
+                    <div class="primary-menu d-flex justify-content-end align-items-center">
+                        <div class="nav-menu" [ngClass]="navMethod ? 'menu-on':''">
+                            <!-- Navbar Close Icon -->
+                            <div class="navbar-close" (click)="toggleNav()">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <nav class="main-menu">
+                                <ul>
+                                    <!-- Data -->
+                                    <li [ngClass]="item.child ? 'menu-item menu-item-has-children':'menu-item'"
+                                        *ngFor="let item of navigation">
+                                        <a href="javascript:void(0)" *ngIf="item.child"
+                                            (click)="trigger(item)">{{item.linkText}}</a>
+                                        <span class="dd-trigger" *ngIf="item.child" (click)="trigger(item)"><i
+                                                class="fas fa-angle-down"></i></span>
+                                        <a routerLink="{{item.link}}" *ngIf="!item.child">{{item.linkText}}</a>
+                                        <ul class="sub-menu" *ngIf="item.child" [ngClass]="item.open ? 'd-block' : ''">
+                                            <li [ngClass]="item.child ? 'menu-item menu-item-has-children':'menu-item'"
+                                                *ngFor="let item of item.submenu">
+                                                <a href="javascript:void(0)" *ngIf="item.child"
+                                                    (click)="trigger(item)">{{item.linkText}}</a>
+                                                <span class="dd-trigger" *ngIf="item.child" (click)="trigger(item)"><i
+                                                        class="fas fa-angle-down"></i></span>
+                                                <a routerLink="{{item.link}}" *ngIf="!item.child">{{item.linkText}}</a>
+                                                <ul class="sub-menu" *ngIf="item.child"
+                                                    [ngClass]="item.open ? 'd-block' : ''">
+                                                    <li [ngClass]="item.child ? 'menu-item menu-item-has-children':'menu-item'"
+                                                        *ngFor="let item of item.submenu">
+                                                        <a routerLink="{{item.link}}">{{item.linkText}}</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- Data -->
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-right">
+                            <ul>
+                                <li class="get-started-wrapper">
+                                    <a routerLink="/services" class="filled-btn bg-burning-orange">
+                                        Get Started <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="menu-toggle" [ngClass]="navMethod ? 'active':''">
+                                        <div class="menu-overlay" (click)="toggleNav()"></div>
+                                        <!-- Navbar Toggler -->
+                                        <div class="nav-toggle">
+                                            <div class="navbar-toggler float-end" [ngClass]="navMethod ? 'active':''"
+                                                (click)="toggleNav()">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container-fluid -->
+    </div> <!-- /.header-navigation -->
+</header>
+<ng-template #searchmodal let-modal>
+    <app-search-box></app-search-box>
+</ng-template>

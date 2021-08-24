@@ -1,0 +1,46 @@
+<section class="blog-list-wrapper pt-130 pb-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="blog-list-content">
+                    <div class="blog-post-item blog-post-item-v3" [ngClass]="item.format === 'no-thumb' ? 'post-offwhite':'' || item.format === 'thumb-bg' ? 'post-type-featured-absolute':''" *ngFor="let item of blogblock | paginate: { itemsPerPage: 4, currentPage: page }">
+                        <div class="post-thumbnail">
+                            <a routerLink="/blog-details/{{item.id}}" *ngIf="item.format === 'standard' || item.format === ''">
+                                <img [src]="item.image[0]" [alt]="item.title" class="w-100">
+                            </a>
+                            <a routerLink="/blog-details/{{item.id}}" *ngIf="item.format === 'thumb-bg'">
+                                <div class="post-thumbnail-bg" [style.background-image]="'url('+item.image[0]+')'"></div>
+                            </a>
+                        </div>
+                        <div class="blog-post-entry-content">
+                            <div class="post-meta-wrapper">
+                                <ul>
+                                    <li *ngFor="let author of getAuthor(item.author)">
+                                        <a routerLink="/blog/author/{{author.id}}" class="post-meta"><i class="far fa-user"></i>{{author.name}}</a>
+                                    </li>
+                                    <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i class="far fa-calendar-alt"></i>{{item.postdate}}</a></li>
+                                    <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i class="far fa-comment-dots"></i>Comments ({{item.reviews.length}})</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="post-title"><a routerLink="/blog-details/{{item.id}}">{{item.title}}</a></h4>
+                            <div class="post-excerpt">
+                                <p>{{item.shorttext}}</p>
+                            </div>
+                            <div class="post-read-more">
+                                <a routerLink="/blog-details/{{item.id}}" class="filled-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- /.blog-post-item -->
+                    <!-- Posts Navigation -->
+                    <!-- Pagination -->
+                    <pagination-controls (pageChange)="page = $event" class="d-block mb-md-80" responsive="true" previousLabel="<" nextLabel=">">
+                    </pagination-controls>
+                </div> <!-- /.blog-list-content -->
+            </div>
+            <div class="col-lg-4">
+                <app-blog-sidebar></app-blog-sidebar>
+                <!-- /.posts-sidebar -->
+            </div>
+        </div> <!-- /row -->
+    </div> <!-- .container -->
+</section>

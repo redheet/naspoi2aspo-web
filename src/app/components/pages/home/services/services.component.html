@@ -1,0 +1,31 @@
+<section class="our-services bg-dark-black pt-129 pb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="section-title section-title-white text-center mb-65">
+                    <div class="section-heading-tag">
+                        <span class="single-heading-tag bg-royal-blue">What We Do</span>
+                    </div>
+                    <h2>We offer smart saas solutions <br class="d-none d-md-block"> for better business</h2>
+                </div>
+            </div>
+        </div>
+        <div class="our-services-content-wrapper">
+            <div class="row">
+                <!-- Single Feature Box -->
+                <div class="col-md-6" *ngFor="let item of serviceblock | slice:0:6">
+                    <div class="single-feature-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                        <div class="feature-box-icon">
+                            <img [src]="item.imageicon" [alt]="item.title">
+                        </div>
+                        <div class="feature-box-content">
+                            <h4><a routerLink="/service-details/{{item.id}}">{{item.title}}</a> </h4>
+                            <p>{{item.shorttext}}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Feature Box -->
+            </div> <!-- /.row -->
+        </div> <!-- /.our-services-content-wrapper -->
+    </div> <!-- /.container -->
+</section>

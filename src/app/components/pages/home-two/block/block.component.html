@@ -1,0 +1,26 @@
+<div class="hero-infobox-area">
+  <div class="container-fluid">
+    <div class="hero-infobox-internal">
+      <div class="row gap-40 justify-content-xl-between align-items-center">
+        <!-- Data -->
+        <div class="col-lg-6" *ngFor="let item of block | slice: 0:2">
+          <div
+            class="infobox-item wow fadeInUp"
+            data-wow-delay="00ms"
+            data-wow-duration="1500ms"
+          >
+            <div class="infobox-icon">
+              <img [src]="item.icon" [alt]="item.title" />
+            </div>
+            <div class="infobox-content">
+              <h4 class="infobox-title">{{ item.title }}</h4>
+              <p>{{ item.text }}</p>
+            </div>
+          </div>
+        </div>
+        <!-- Data -->
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</div>

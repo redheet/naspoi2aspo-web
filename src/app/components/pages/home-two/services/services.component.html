@@ -1,0 +1,70 @@
+<section
+  class="our-services our-services-v1 pt-150 pb-100"
+  [style.background-image]="'url(assets/img/services/dots-pattern-bg.png)'"
+>
+  <div class="container">
+    <div class="service-area-internal">
+      <div class="section-particle-effect d-none d-lg-block">
+        <img
+          class="particle-1 animate-zoominout"
+          src="assets/img/particle/gradient-ball-shape.png"
+          alt="ball shape"
+        />
+        <img
+          class="particle-3 animate-rotate-me"
+          src="assets/img/particle/gradient-curve-shape.png"
+          alt="curve shape"
+        />
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div
+            class="section-title mb-105 text-center section-title-ocean-blue"
+          >
+            <div class="section-heading-tag">
+              <span class="single-heading-tag">Kategori</span>
+            </div>
+            <h2>
+              Pilih <span>Kategori</span>Yang Ingin
+              <br class="d-none d-md-block" />
+              Kalian Daftrakan
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.service-area-internal -->
+  </div>
+  <!-- /.container -->
+  <div class="service-area-content">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Data -->
+        <div
+          class="col-xl-2 col-lg-4 col-md-6"
+          *ngFor="let item of serviceblock | slice: 0:6"
+        >
+          <div
+            class="single-service-box single-service-box-v2 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="service-thumbnail">
+              <img [src]="item.vectorimage" [alt]="item.title" />
+            </div>
+            <div class="service-box-content">
+              <h5 class="service-box-title">{{ item.title }}</h5>
+              <div class="service-box-btn">
+                <a routerLink="/#"><i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Data -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.service-area-content -->
+</section>

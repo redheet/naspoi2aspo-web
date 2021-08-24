@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Dokumen yang dibutuhkan setelah daftar?",
+    "text": "Extendeed abstract, Poster, Materi Presentasi."
+  },
+  {
+    "id": 2,
+    "title": "Penghargaan?",
+    "text": "Emas, Perak, Perunggu, { IYSA Semi Grand Awards, IYSA Grand Awards, ITS Special Awards }."
+  },
+  {
+    "id": 3,
+    "title": "Mekanisme kompetisi online?",
+    "text": "- Seluruh team yang berpartisipasi akan melakukan penjurian dengan menggunakan media Zoom",
+    "bagian2": "- Presentasi menggunakan Bahasa Indonesia, Materi presentasi (Power Point) dibuat dengan menggunakan Bahasa Indonesia yang baik dan benar.",
+    "bagian3": "- Setiap team akan mendapatkan waktu 15 menit yang dibagi menjadi : 8 menit presentasi dan 7 menit merupakan sesi Tanya jawab dengan juri.",
+    "bagian4": "- Ketika melakukan presentasi, peserta diharapkan membawa produk yang dihasilkan."
+  },
+  {
+    "id": 4,
+    "title": "Mekanisme kompetisi offline?",
+    "text": "- Kompetisi offline hanya untuk 150 team untuk peserta SMP/MTs, SMA/MA, dan Mahasiswa.",
+    "bagian2": "- Setiap team akan diwakili oleh maksimal 2 orangpeserta yang hadir di kompetisi offline bersama dengan 1 orang guru pembimbing.",
+    "bagian3": "- Setiap peserta diwajibkan membawa surat keterangan negatif Covid-19 dari Rumah sakit.",
+    "bagian4": "- Setiap team diwajibkan membawa poster ukuran A0, mendekorasi booth/meja yang disediakan oleh panitia."
+  }
+]

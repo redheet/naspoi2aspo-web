@@ -1,0 +1,17 @@
+<div class="contact-area-content content-right-spacer">
+    <div class="info-iconic-boxes">
+        <!-- Data -->
+        <div class="info-iconic-box" *ngFor="let item of contactinfo">
+            <div class="info-icon" [ngClass]="item.style">
+                <i [class]="item.icon"></i>
+            </div>
+            <div class="info-body">
+                <h5>{{item.title}}</h5>
+                <p *ngFor="let list of item.info">
+                    <a href="#">{{list}}</a>
+                </p>
+            </div>
+        </div>
+        <!-- Data -->
+    </div>
+</div>

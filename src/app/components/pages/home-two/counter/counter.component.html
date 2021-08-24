@@ -1,0 +1,21 @@
+<div class="counter-up-area section-bg-overflow">
+    <div class="container-fluid">
+        <div class="counterup-internal bg-burning-orange wow fadeInUp" [style.background-image]="'url(assets/img/particle/section-curve-shape.svg)'" data-wow-delay="00ms" data-wow-duration="2500ms">
+            <div class="row align-items-center">
+                <!-- Single Counter Up -->
+                <div class="col-lg-3 col-sm-6" *ngFor="let item of counter">
+                    <div class="single-counter-up single-counter-up-v2">
+                        <div class="counterup-info">
+                            <h2>
+                                <span class="counter" [countUp]="item.valuetwo">0</span>
+                                <span class="sign">+</span>
+                            </h2>
+                            <p>{{item.title}}</p>
+                        </div>
+                    </div> <!-- /.single-counter-up -->
+                </div>
+                <!-- Single Counter Up -->
+            </div> <!-- /.row -->
+        </div>
+    </div> <!-- /.container-->
+</div>

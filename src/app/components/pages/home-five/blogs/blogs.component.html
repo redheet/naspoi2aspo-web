@@ -1,0 +1,47 @@
+<section class="blog-and-news-area blog-news-v2 bg-dark-black-v2 pt-120 pb-100">
+    <div class="container">
+        <div class="section-internal">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="section-title section-title-white mb-70">
+                        <h2>News & Blog</h2>
+                        <div class="section-title-description">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sity voluptatem accusantium doloremque</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" *ngFor="let item of getRecentPost()">
+                    <div class="blog-post-item blog-post-item-v4" [ngClass]="[item.id === 2 ? 'color-purple':'color-reddish-orange' , item.id === 3 ? 'color-magenta':'color-reddish-orange']">
+                        <div class="post-thumbnail">
+                            <a routerLink="/blog-details/{{item.id}}">
+                                <img [src]="item.image[0]" [alt]="item.title">
+                            </a>
+                            <div class="post-tag">
+                                <a routerLink="/blog/tag/{{tag.id}}" *ngFor="let tag of getTags(item.tags) | slice:0:1">{{tag.title}}</a>
+                            </div>
+                        </div>
+                        <div class="blog-post-entry-content">
+                            <div class="post-meta-wrapper">
+                                <ul>
+                                    <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i class="far fa-calendar-alt"></i>{{item.postdate}}</a></li>
+                                    <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i class="fas fa-comment-dots"></i>Com ({{item.reviews.length}})</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="post-title"><a routerLink="/blog-details/{{item.id}}">{{item.title | slice:0:42}}...</a></h4>
+                            <div class="post-read-more">
+                                <a routerLink="/blog-details/{{item.id}}" class="filled-btn bg-blue-chalk">Read more <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+            <div class="section-button-wrapper">
+                <a routerLink="/blog-grid" class="filled-btn">
+                    View More News <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div> <!-- /.section-internal -->
+    </div> <!-- /.container -->
+</section>

@@ -1,0 +1,35 @@
+<section class="faq-area pt-135 pb-125">
+    <div class="container">
+        <div class="section-internal">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="faq-content content-right-spacer">
+                        <div class="section-title mb-40">
+                            <div class="section-heading-tag">
+                                <span class="single-heading-tag">Asked Question</span>
+                            </div>
+                            <h2>Frequently Asked Questions</h2>
+                        </div>
+                        <div class="section-accordion section-accordion-v2">
+                            <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                                <ngb-panel id="static-{{1+i}}" *ngFor="let item of faqs | slice:0:4;let i = index">
+                                    <ng-template ngbPanelTitle>
+                                        {{item.title}}
+                                    </ng-template>
+                                    <ng-template ngbPanelContent>
+                                        <p>{{item.text}}</p>
+                                    </ng-template>
+                                </ngb-panel>
+                            </ngb-accordion> <!-- /.accordion -->
+                        </div> <!-- /.section-accordion -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-right-image faq-right-image animate-float-bob-y wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2500ms">
+                        <img src="assets/img/faq/faq-image-2.jpg" alt="faq image">
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.section-internal -->
+    </div> <!-- /.container -->
+</section>

@@ -1,0 +1,25 @@
+<section class="testimonial-area bg-tuna border-0 bg-contain testimonial-area-overflow pb-120"
+    [style.background-image]="'url(assets/img/testimonial/testimonial-pattern-bg.png)'">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <ngx-slick-carousel [config]="settings" class="testimonial-slider testimonial-slider-v2"
+                    id="testimonial-slider-v2">
+                    <!-- Single Testimonial -->
+                    <div class="single-testimonial single-testimonial-v2" ngxSlickItem
+                        *ngFor="let item of testimonials">
+                        <div class="quote-thumbnail">
+                            <i class="flaticon-right-quote"></i>
+                        </div>
+                        <p>{{item.comment}}</p>
+                        <div class="testimonial-author" *ngFor="let author of getAuthor(item.author)">
+                            <img [src]="author.image" [alt]="author.name">
+                            <h6>{{author.name}} <span>{{author.post}}</span></h6>
+                        </div>
+                    </div>
+                    <!-- Single Testimonial -->
+                </ngx-slick-carousel>
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>

@@ -1,0 +1,32 @@
+<section class="our-services our-services-v3 bg-light-magnolia pt-120 pb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-title text-center mb-45">
+                    <h2>Learn How to Move Faster</h2>
+                    <div class="section-title-description">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Data -->
+            <div class="col-lg-6" *ngFor="let item of features">
+                <div class="single-service-box single-service-box-v3 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1500ms">
+                    <div class="service-thumbnail">
+                        <img [src]="item.image" [alt]="item.title">
+                    </div>
+                    <div class="service-box-content">
+                        <h5 class="service-box-title">{{item.title}}</h5>
+                        <p>{{item.text}}</p>
+                        <div class="service-box-btn">
+                            <a routerLink="/about">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Data -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>

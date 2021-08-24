@@ -1,0 +1,25 @@
+<div class="newsletter-search-area wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+    <div class="container">
+        <div class="newsletter-search-internal text-center section-gradient-1 pt-75 pb-80">
+            <div class="newsletter-search-section-images wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms" [style.background-image]="'url(assets/img/particle/hello-announcement.png),url(assets/img/particle/launch-rocket.png)'"></div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title section-title-white">
+                        <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Discover Your <span>SEO</span> Score!</h2>
+                        <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">Empower SEO teams to find the best growth opportunities</p>
+                    </div>
+                    <div class="newsletter-search-form wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <form [formGroup]="searchForm" (ngSubmit)="onSearchFormSubmit()">
+                            <div class="form-group">
+                                <input type="text" formControlName="weburl" class="form-control" placeholder="Your Website URL">
+                                <input type="email" formControlName="email" class="form-control" placeholder="Email Address">
+                                <button type="submit" class="filled-btn bg-burning-orange" [disabled]="!searchForm.valid">Search Now <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.newsletter-search-internal  -->
+    </div> <!-- /.container -->
+    <div class="section-bg-overflow bg-magnolia"></div>
+</div>

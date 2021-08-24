@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "icon": "fal fa-map-marker-alt",
+    "title": "Our Location",
+    "info": ["JL. RAYA PASIR PUTIH Depok, Jawa Barat 16511, Indonesia."],
+    "style": "info-icon-gradient-1"
+  },
+  {
+    "id": 2,
+    "icon": "fal fa-envelope-open-text",
+    "title": "Email Address",
+    "info": ["youngscientist.iysa@gmail.com", "naspoi2aspo.iysa@gmail.com"],
+    "style": "info-icon-gradient-2"
+  },
+  {
+    "id": 3,
+    "icon": "fal fa-phone",
+    "title": "Urgent Call",
+    "info": ["0817 7091 4129"],
+    "style": "info-icon-gradient-3"
+  }
+]

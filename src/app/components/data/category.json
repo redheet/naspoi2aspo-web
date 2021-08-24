@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "title":"Web Development"
+    },
+    {
+        "id":2,
+        "title":"Email Marketing"
+    },
+    {
+        "id":3,
+        "title":"IT Consultancy"
+    },
+    {
+        "id":4,
+        "title":"Business Consulting"
+    },
+    {
+        "id":5,
+        "title":"Apps Development"
+    },
+    {
+        "id":6,
+        "title":"Media Marketing"
+    },
+    {
+        "id":7,
+        "title":"SEO Optimizations"
+    },
+    {
+        "id":8,
+        "title":"Landing Page"
+    }
+]

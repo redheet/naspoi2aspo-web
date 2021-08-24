@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "icon":"assets/img/feature/flaticon-headphones.png",
+        "title":"Audio & Video Call",
+        "text":"Sed perspiciatis unde omnis este error voluptate accusant doloremque systems.",
+        "boxstyle":"exclusive-iconic-box-1"
+    },
+    {
+        "id":2,
+        "icon":"assets/img/feature/flaticon-share.png",
+        "title":"Screen Sharing",
+        "text":"Quis autem vel eum iuresc reprehe nderit ea voluptatey velit esse quam nihile",
+        "boxstyle":"exclusive-iconic-box-2"
+    },
+    {
+        "id":3,
+        "icon":"assets/img/feature/flaticon-chatting.png",
+        "title":"Chat & Message",
+        "text":"On the other hand dennce with righteous indig nations dislike men beguiled",
+        "boxstyle":"exclusive-iconic-box-3"
+    },
+    {
+        "id":4,
+        "icon":"assets/img/feature/flaticon-satisfaction.png",
+        "title":"Download Apps",
+        "text":"Sed perspiciatis unde omnis este error voluptate accusant doloremque systems.",
+        "boxstyle":"exclusive-iconic-box-4"
+    }
+]

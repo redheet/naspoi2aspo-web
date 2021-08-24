@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "image":"assets/img/hero/home-v6-slider-bg-1.jpg",
+        "title":"We Rebuilding Fintech Solution",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque"
+    },
+    {
+        "id":2,
+        "image":"assets/img/hero/home-v6-slider-bg-2.jpg",
+        "title":"We Rebuilding Fintech Solution",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque"
+    },
+    {
+        "id":3,
+        "image":"assets/img/hero/home-v6-slider-bg-3.jpg",
+        "title":"We Rebuilding Fintech Solution",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque"
+    }
+]

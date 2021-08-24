@@ -1,0 +1,67 @@
+<section class="blog-and-news-area bg-magnolia pt-130 pb-100" [style.background-image]="'url(assets/img/services/dots-pattern-bg.png)'">
+    <div class="container">
+        <div class="section-internal">
+            <div class="section-particle-effect d-none d-md-block section-particle-effect-v2">
+                <img class="particle-1 animate-zoom-fade" src="assets/img/particle/particle-1.png" alt="particle One">
+                <img class="particle-2 animate-rotate-me" src="assets/img/particle/particle-2.png" alt="particle Two">
+                <img class="particle-3 animate-float-bob-y" src="assets/img/particle/particle-3.png" alt="particle Three">
+                <img class="particle-4 animate-zoominout" src="assets/img/particle/particle-4.png" alt="particle Four">
+                <img class="particle-5 animate-zoominout" src="assets/img/particle/particle-5.png" alt="particle Five">
+                <img class="particle-7 animate-float-bob-x" src="assets/img/particle/particle-7.png" alt="particle Seven">
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-news-content">
+                        <div class="section-title section-title-ocean-blue">
+                            <div class="section-heading-tag">
+                                <span class="single-heading-tag">Blog & News</span>
+                            </div>
+                            <h2>Get Every Single
+                                <span>Update</span>
+                                & Tips
+                            </h2>
+                            <div class="section-title-description">
+                                <p>Sed ut perspiciatis unde omnis iste natus error voluptate accus oloremqu laudantium totam aperiam</p>
+                            </div>
+                            <div class="section-button-wrapper">
+                                <a routerLink="/blog-grid" class="filled-btn">
+                                    View All News <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <!-- Single Blog Post -->
+                        <div class="col-lg-6" *ngFor="let item of getRecentPost() | slice:0:2">
+                            <div class="blog-post-item wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="post-thumbnail">
+                                    <a routerLink="/blog-details/{{item.id}}">
+                                        <img [src]="item.image[0]" [alt]="item.title">
+                                    </a>
+                                    <div class="post-tag bg-purple">
+                                        <a routerLink="/blog/tag/{{tag.id}}" *ngFor="let tag of getTags(item.tags) | slice:0:1">{{tag.title}}</a>
+                                    </div>
+                                </div>
+                                <div class="blog-post-entry-content">
+                                    <div class="post-meta-wrapper">
+                                        <ul>
+                                            <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i class="far fa-calendar-alt"></i>{{item.postdate}}</a></li>
+                                            <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i class="fas fa-comment-dots"></i>Com ({{item.reviews.length}})</a></li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="post-title"><a routerLink="/blog-details/{{item.id}}">{{item.title | slice:0:42}}...</a></h4>
+                                    <div class="post-read-more">
+                                        <a routerLink="/blog-details/{{item.id}}" class="filled-btn bg-blue-chalk">Read more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Blog Post -->
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.section-internal -->
+    </div> <!-- /.container -->
+</section>

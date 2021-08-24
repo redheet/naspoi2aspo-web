@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "icon": "assets/img/hero/infobox-icon-1.png",
+    "title": "Tujuan Pertama",
+    "text": "Menantang para siswa/mahasiswa Indonesia untuk membuat sebuah karya yang bisa diaplikasikan dan bermanfaat secara langsung pada masyarakat."
+  },
+  {
+    "id": 2,
+    "icon": "assets/img/hero/infobox-icon-2.png",
+    "title": "Tujuan Ke Dua",
+    "text": "Mengajak para siswa/mahasiswa Indonesia untuk lebih peka terhadap permasalahan di lingkungan masing-masing dan mencari solusinya."
+  }
+]

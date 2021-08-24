@@ -1,0 +1,46 @@
+<footer class="footer-area footer-area-v1" [style.background-image]="'url(assets/img/footer-bg.png)'">
+    <div class="container">
+        <div class="footer-area-internal">
+            <div class="row">
+                <!-- Single Footer Widget -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="single-footer-widget footer-text-widget">
+                        <img src="assets/img/logo-royal-blue.png" alt="footer logo">
+                        <p>Sed ut perspiciatis undmnis iste natus error sit voluptatem accusantium dolore udantiuy totam rem aperiam.</p>
+                        <a class="footer-contact-link" href="tel:+01234567899"><i class="fas fa-phone"></i> +012 (345) 678 99</a>
+                    </div> 
+                </div>
+                <!-- Single Footer Widget -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s" *ngFor="let data of links">
+                    <div class="single-footer-widget">
+                        <h5 class="widget-title">{{data.title}}</h5>
+                        <div class="footer-widget-menu">
+                            <ul>
+                                <li *ngFor="let item of data.items"><a routerLink="{{item.link}}">{{item.title}}</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+                <!-- Single Footer Widget -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="single-footer-widget">
+                        <h5 class="widget-title">Follow On</h5>
+                        <div class="footer-social-links">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-copyright">
+                            <p>&copy; 2021 <a href="#">Website.</a> All Rights Reserved</p>
+                        </div>
+                    </div> 
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.footer-area-internal -->
+    </div> <!-- /.container -->
+</footer>
+<a href="javascript:void(0)" [ngClass]="windowScrolled ? 'd-inline-block':''" (click)="scrollToTop()" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>

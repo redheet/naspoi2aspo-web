@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "title":"Saas Landing",
+        "value":87,
+        "style":"bg-royal-blue"
+    },
+    {
+        "id":2,
+        "title":"Product Design",
+        "value":93,
+        "style":"bg-burning-orange"
+    },
+    {
+        "id":3,
+        "title":"UI/UX Strategy",
+        "value":68,
+        "style":"bg-magenta"
+    },
+    {
+        "id":4,
+        "title":"Web Design",
+        "value":75,
+        "style":"bg-blue"
+    }
+]

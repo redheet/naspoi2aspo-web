@@ -1,0 +1,39 @@
+<section class="blog-and-news-area pt-120 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title mb-120 section-title-mirage">
+                    <div class="section-heading-tag">
+                        <span class="single-heading-tag">News & Blog</span>
+                    </div>
+                    <h2>Get Our Every Single <br class="d-none d-md-block"> <span>Update & Tips</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Data -->
+            <div class="col-lg-4 col-md-6" *ngFor="let item of getRecentPost()">
+                <div class="blog-post-item blog-post-item-v2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="post-thumbnail">
+                        <a routerLink="/blog-details/{{item.id}}">
+                            <img [src]="item.image[0]" [alt]="item.title">
+                        </a>
+                    </div>
+                    <div class="blog-post-entry-content">
+                        <div class="post-meta-wrapper">
+                            <ul>
+                                <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i class="far fa-calendar-alt"></i>{{item.postdate}}</a></li>
+                            </ul>
+                        </div>
+                        <h4 class="post-title"><a routerLink="/blog-details/{{item.id}}">{{item.title | slice:0:40}}</a></h4>
+                        <div class="post-author" *ngFor="let author of getAuthor(item.author)">
+                            <a routerLink="/blog/author/{{author.id}}" class="post-author-thumb"><img [src]="author.image" [alt]="author.name"></a>
+                            <a routerLink="/blog/author/{{author.id}}" class="post-author-name">{{author.name}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Data -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section> 

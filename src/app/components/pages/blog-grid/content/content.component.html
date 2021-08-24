@@ -1,0 +1,35 @@
+<section class="blog-list-wrapper pt-130 pb-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6"
+                *ngFor="let item of blogblock | paginate: { itemsPerPage: 6, currentPage: page }">
+                <div class="blog-post-item blog-post-item-v4 color-purple shadow-template">
+                    <div class="post-thumbnail">
+                        <a routerLink="/blog-details/{{item.id}}">
+                            <img [src]="item.image[0]" [alt]="item.title">
+                        </a>
+                        <div class="post-tag">
+                            <a routerLink="/blog/tag/{{tag.id}}" *ngFor="let tag of getTags(item.tags) | slice:0:1">{{tag.title}}</a>
+                        </div>
+                    </div>
+                    <div class="blog-post-entry-content">
+                        <div class="post-meta-wrapper">
+                            <ul>
+                                <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i class="far fa-calendar-alt"></i>{{item.postdate}}</a></li>
+                                <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i class="fas fa-comment-dots"></i>Com ({{item.reviews.length}})</a></li>
+                            </ul>
+                        </div>
+                        <h4 class="post-title"><a routerLink="/blog-details/{{item.id}}">{{item.title | slice:0:42}}...</a></h4>
+                        <div class="post-read-more">
+                            <a routerLink="/blog-details/{{item.id}}" class="filled-btn bg-blue-chalk">Read more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /row -->
+        <!-- Pagination -->
+        <pagination-controls (pageChange)="page = $event" responsive="true" previousLabel="<" nextLabel=">">
+        </pagination-controls>
+        <!-- Pagination -->
+    </div> <!-- .container -->
+</section>

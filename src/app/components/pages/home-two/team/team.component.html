@@ -1,0 +1,94 @@
+<section class="our-team-area pt-130 pb-100">
+    <div class="container">
+        <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-lg-6">
+                <div class="section-title text-center text-lg-left section-title-ocean-blue">
+                    <div class="section-heading-tag">
+                        <span class="single-heading-tag">Creative Team</span>
+                    </div>
+                    <h2>We Have Professional
+                        <span>Creative</span>
+                        Team
+                    </h2>
+                </div>
+                <div class="row justify-content-end">
+                    <!-- Single Team Member -->
+                    <div class="col-lg-6" *ngFor="let item of teamblock | slice:0:1">
+                        <div class="single-team-member wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="team-member-thumb">
+                                <img [src]="item.image" [alt]="item.name">
+                            </div>
+                            <div class="team-member-bio">
+                                <h5 class="team-member-name">
+                                    {{item.name}}
+                                </h5>
+                                <p class="team-member-role">
+                                    {{item.post}}
+                                </p>
+                                <div class="social-links">
+                                    <ul>
+                                        <li *ngFor="let social of item.social"><a routerLink="{{social.link}}"><i [class]="social.icon"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team-member-content">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <!-- Single Team Member -->
+                            <div class="single-team-member wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms" *ngFor="let item of teamblock | slice:1:3">
+                                <div class="team-member-thumb">
+                                    <img [src]="item.image" [alt]="item.name">
+                                </div>
+                                <div class="team-member-bio">
+                                    <h5 class="team-member-name">
+                                        {{item.name}}
+                                    </h5>
+                                    <p class="team-member-role">
+                                        {{item.post}}
+                                    </p>
+                                    <div class="social-links">
+                                        <ul>
+                                            <li *ngFor="let social of item.social"><a routerLink="{{social.link}}"><i [class]="social.icon"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Team Member -->
+                        </div>
+                        <!-- Single Team Member -->
+                        <div class="col-lg-6" *ngFor="let item of teamblock | slice:3:4">
+                            <div class="single-team-member wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="team-member-thumb">
+                                    <img [src]="item.image" [alt]="item.name">
+                                </div>
+                                <div class="team-member-bio">
+                                    <h5 class="team-member-name">
+                                        {{item.name}}
+                                    </h5>
+                                    <p class="team-member-role">
+                                        {{item.post}}
+                                    </p>
+                                    <div class="social-links">
+                                        <ul>
+                                            <li *ngFor="let social of item.social"><a routerLink="{{social.link}}"><i [class]="social.icon"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-btn-wrapper text-center mt-90 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                <a routerLink="/team" class="filled-btn bg-ocean-blue">
+                                    View More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>

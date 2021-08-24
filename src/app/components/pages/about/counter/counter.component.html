@@ -1,0 +1,35 @@
+<section class="counter-up-area bg-royal-blue pt-128 pb-43">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="counter-up-thumbnails content-right-spacer wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <img class="counterup-main-thumbnail-top animate-float-bob-x" src="assets/img/app/count-down-main-thumbnail-top.png" alt="countdown thumbnails top">
+                    <img class="counterup-main-thumbnail" src="assets/img/app/count-down-main-thumbnail.png" alt="countdown thumbnails main">
+                    <img class="counterup-main-thumbnail-bottom animate-float-bob-y" src="assets/img/app/count-down-main-thumbnail-bottom.png" alt="countdown thumbnails bottom">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="counterup-wrapper">
+                    <div class="row">
+                        <!-- Single Counter Up -->
+                        <div class="col-md-6 col-sm-6" *ngFor="let item of counter">
+                            <div class="single-counter-up wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                <div class="counterup-icon">
+                                    <i [class]="item.icon"></i>
+                                </div>
+                                <div class="counterup-info">
+                                    <h2>
+                                        <span class="counter" [countUp]="item.value">0</span>
+                                        <span class="sign">+</span>
+                                    </h2>
+                                    <p>{{item.title}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Counter Up -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.counterup-wrapper -->
+            </div> <!-- /.col-md-7 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container-->
+</section>

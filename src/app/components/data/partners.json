@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "image":"assets/img/brand/brand-1.png"
+    },
+    {
+        "id":2,
+        "image":"assets/img/brand/brand-2.png"
+    },
+    {
+        "id":3,
+        "image":"assets/img/brand/brand-3.png"
+    },
+    {
+        "id":4,
+        "image":"assets/img/brand/brand-4.png"
+    },
+    {
+        "id":5,
+        "image":"assets/img/brand/brand-5.png"
+    }
+]

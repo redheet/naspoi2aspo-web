@@ -1,0 +1,155 @@
+<section class="testimonial-area pt-120 pb-100 bg-dark-black">
+    <div class="container">
+        <div class="section-title text-center mb-100 section-title-white section-title-white-v2">
+            <div class="section-heading-tag">
+                <span class="single-heading-tag bordered-tag text-white">Our Testimonials</span>
+            </div>
+            <h2>What Our Clients Say <br class="d-none d-md-block"> About <span>Chat App</span></h2>
+        </div> 
+        <div class="testimonial-slider">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-testimonial mt-80 single-testimonial-v3 wow fadeInUp" data-wow-delay="0.1s" *ngFor="let item of testimonials | slice:0:1">
+                        <div class="single-testimonial-body">
+                            <div class="author-rating">
+                                <ul class="rating-review">
+                                    <li>
+                                        <div class="all-rating star-5">
+                                            <div class="main-rating">
+                                                <ngb-rating [max]="5" [(rate)]="item.rating" [readonly]="true">
+                                                    <ng-template let-fill="fill" let-index="index">
+                                                        <i class="fa fa-star" [class.active]="fill === 100"></i>
+                                                    </ng-template>
+                                                </ngb-rating>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="testimonial-brand">
+                                    <img [src]="brand.image" alt="img" *ngFor="let brand of getClients(item.client)">
+                                </div>
+                            </div>
+                            <p class="author-comments">{{item.comment | slice:0:125}}</p>
+                        </div>
+                        <div class="testimonial-author" *ngFor="let author of getAuthor(item.author)">
+                            <img [src]="author.image" [alt]="author.name">
+                            <h6>{{author.name}} <span>{{author.post}}</span></h6>
+                        </div>
+                    </div>
+                    <div class="single-testimonial single-testimonial-v3 wow fadeInUp" data-wow-delay="0.2s" *ngFor="let item of testimonials | slice:1:2">
+                        <div class="single-testimonial-body">
+                            <div class="author-rating">
+                                <ul class="rating-review">
+                                    <li>
+                                        <div class="all-rating star-5">
+                                            <div class="main-rating">
+                                                <ngb-rating [max]="5" [(rate)]="item.rating" [readonly]="true">
+                                                    <ng-template let-fill="fill" let-index="index">
+                                                        <i class="fa fa-star" [class.active]="fill === 100"></i>
+                                                    </ng-template>
+                                                </ngb-rating>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="testimonial-brand">
+                                    <img [src]="brand.image" alt="img" *ngFor="let brand of getClients(item.client)">
+                                </div>
+                            </div>
+                            <p class="author-comments">{{item.comment | slice:0:125}}</p>
+                        </div>
+                        <div class="testimonial-author" *ngFor="let author of getAuthor(item.author)">
+                            <img [src]="author.image" [alt]="author.name">
+                            <h6>{{author.name}} <span>{{author.post}}</span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-testimonial mt-40 single-testimonial-v3 wow fadeInUp" data-wow-delay="0.3s" *ngFor="let item of testimonials | slice:2:3">
+                        <div class="single-testimonial-body">
+                            <div class="author-rating">
+                                <ul class="rating-review">
+                                    <li>
+                                        <div class="all-rating star-5">
+                                            <div class="main-rating">
+                                                <ngb-rating [max]="5" [(rate)]="item.rating" [readonly]="true">
+                                                    <ng-template let-fill="fill" let-index="index">
+                                                        <i class="fa fa-star" [class.active]="fill === 100"></i>
+                                                    </ng-template>
+                                                </ngb-rating>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="testimonial-brand">
+                                    <img [src]="brand.image" alt="img" *ngFor="let brand of getClients(item.client)">
+                                </div>
+                            </div>
+                            <p class="author-comments">{{item.comment | slice:0:125}}</p>
+                        </div>
+                        <div class="testimonial-author" *ngFor="let author of getAuthor(item.author)">
+                            <img [src]="author.image" [alt]="author.name">
+                            <h6>{{author.name}} <span>{{author.post}}</span></h6>
+                        </div>
+                    </div>
+                    <div class="single-testimonial single-testimonial-v3 wow fadeInUp" data-wow-delay="0.4s" *ngFor="let item of testimonials | slice:3:4">
+                        <div class="single-testimonial-body">
+                            <div class="author-rating">
+                                <ul class="rating-review">
+                                    <li>
+                                        <div class="all-rating star-5">
+                                            <div class="main-rating">
+                                                <ngb-rating [max]="5" [(rate)]="item.rating" [readonly]="true">
+                                                    <ng-template let-fill="fill" let-index="index">
+                                                        <i class="fa fa-star" [class.active]="fill === 100"></i>
+                                                    </ng-template>
+                                                </ngb-rating>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="testimonial-brand">
+                                    <img [src]="brand.image" alt="img" *ngFor="let brand of getClients(item.client)">
+                                </div>
+                            </div>
+                            <p class="author-comments">{{item.comment | slice:0:125}}</p>
+                        </div>
+                        <div class="testimonial-author" *ngFor="let author of getAuthor(item.author)">
+                            <img [src]="author.image" [alt]="author.name">
+                            <h6>{{author.name}} <span>{{author.post}}</span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-testimonial single-testimonial-v3 wow fadeInUp" data-wow-delay="0.5s" *ngFor="let item of testimonials | slice:4:6">
+                        <div class="single-testimonial-body">
+                            <div class="author-rating">
+                                <ul class="rating-review">
+                                    <li>
+                                        <div class="all-rating star-5">
+                                            <div class="main-rating">
+                                                <ngb-rating [max]="5" [(rate)]="item.rating" [readonly]="true">
+                                                    <ng-template let-fill="fill" let-index="index">
+                                                        <i class="fa fa-star" [class.active]="fill === 100"></i>
+                                                    </ng-template>
+                                                </ngb-rating>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="testimonial-brand">
+                                    <img [src]="brand.image" alt="img" *ngFor="let brand of getClients(item.client)">
+                                </div>
+                            </div>
+                            <p class="author-comments">{{item.comment | slice:0:125}}</p>
+                        </div>
+                        <div class="testimonial-author" *ngFor="let author of getAuthor(item.author)">
+                            <img [src]="author.image" [alt]="author.name">
+                            <h6>{{author.name}} <span>{{author.post}}</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.testimonial-slider -->
+    </div> <!-- /.container -->
+</section>

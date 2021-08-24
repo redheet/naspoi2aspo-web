@@ -1,0 +1,44 @@
+<section class="pricing-area pt-130 pb-95">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="section-title mb-75 text-center">
+                    <div class="section-heading-tag">
+                        <span class="single-heading-tag">Our Pricing Plan</span>
+                    </div>
+                    <h2>Choose The Best Package For <br class="d-none d-md-block"> Your SEO Marketing </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Single Pricing Table -->
+            <div class="col-lg-4" *ngFor="let item of plans">
+                <div class="pricing-table wow fadeInUp" [ngClass]="item.planclass" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="pricing-plan-title">
+                        <div class="pricing-table-icon" [style.background-image]="'url(assets/img/pricing/pricing-table-blob.svg)'">
+                            <h5 class="plan-title" [ngClass]="item.btnstyle">{{item.plantitle}}</h5>
+                            <img [src]="item.icon" [alt]="item.plantitle">
+                        </div>
+                        <div class="pricing-plan-cost">
+                            <span class="payment-currency">$</span>
+                            <span class="plan-price">{{item.price}}</span>
+                            <span class="plan-type">/ {{item.period}}</span>
+                        </div>
+                    </div>
+                    <div class="pricing-plan-features">
+                        <ul>
+                            <li class="plan-feature" *ngFor="let list of item.includes">{{list}}</li>
+                            <li class="plan-feature plan-feature-disabled" *ngFor="let list of item.excludes">{{list}}</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-table-foot">
+                        <div class="plan-select">
+                            <a routerLink="/contact" class="filled-btn" [ngClass]="item.btnstyle">Select Plan <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Pricing Table -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section> 

@@ -1,0 +1,145 @@
+<section class="blog-details-wrapper pt-130 pb-130" *ngFor="let item of blogdetails">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="blog-details-content">
+                    <div class="blog-post-item">
+                        <div class="post-thumbnail">
+                            <img [src]="item.image[0]" [alt]="item.title" class="w-100">
+                        </div>
+                        <div class="entry-content">
+                            <div class="post-meta-wrapper">
+                                <ul>
+                                    <li *ngFor="let author of getAuthor(item.author)">
+                                        <a routerLink="/blog/author/{{author.id}}" class="post-meta"><i
+                                                class="far fa-user"></i>{{author.name}}</a>
+                                    </li>
+                                    <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i
+                                                class="far fa-calendar-alt"></i>{{item.postdate}}</a></li>
+                                    <li><a routerLink="/blog-details/{{item.id}}" class="post-meta"><i
+                                                class="far fa-comment-dots"></i>Comments ({{item.reviews.length}})</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>{{item.title}}</h4>
+                            <div [innerHtml]="item.htmltext"></div>
+                            <div class="post-share">
+                                <div class="post-tag-cloud">
+                                    <ul>
+                                        <li class="item-heading">Poplular Tags </li>
+                                        <!-- Data -->
+                                        <li *ngFor="let tag of getTags(item.tags) | slice:0:3">
+                                            <a routerLink="/blog/tag/{{tag.id}}">{{tag.title}}</a>
+                                        </li>
+                                        <!-- Data -->
+                                    </ul>
+                                </div>
+                                <div class="social-links">
+                                    <ul>
+                                        <li class="item-heading">Share :</li>
+                                        <!-- Data -->
+                                        <li *ngFor="let social of socialShare(item.title)">
+                                            <a href="javascript:void(0)" (click)="openSocialPopup(social)">
+                                                <i [class]="social.iconClass"></i>
+                                            </a>
+                                        </li>
+                                        <!-- Data -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Author -->
+                    <div class="post-author-box" *ngFor="let author of getAuthor(item.author)">
+                        <div class="post-author-thumbnail">
+                            <img [src]="author.image" [alt]="author.name">
+                        </div>
+                        <div class="author-box-content">
+                            <h4>{{author.name}}</h4>
+                            <p>{{author.shorttext}}</p>
+                            <div class="social-links">
+                                <ul>
+                                    <!-- Data -->
+                                    <li *ngFor="let social of author.social">
+                                        <a href="{{social.link}}">
+                                            <i [class]="social.icon"></i>
+                                        </a>
+                                    </li>
+                                    <!-- Data -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Comment Area -->
+                    <div class="comments-area">
+                        <h4 class="comments-title">People Comments</h4>
+                        <ul class="comments-list" *ngFor="let review of item.reviews">
+                            <!-- Data -->
+                            <li class="comment">
+                                <div class="comment-avatar" *ngFor="let user of getAuthor(review.user)">
+                                    <img [src]="user.image" [alt]="user.name">
+                                </div>
+                                <div class="comment-wrap" *ngFor="let user of getAuthor(review.user)">
+                                    <div class="comment-author-content">
+                                        <span class="author-name">{{user.name}} <span class="date">{{review.commentdate}}</span></span>
+                                        <p>{{review.comment}}</p>
+                                        <a href="#" class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Data -->
+                            <li class="comment" *ngFor="let review of review.replies">
+                                <div class="comment-avatar" *ngFor="let user of getAuthor(review.user)">
+                                    <img [src]="user.image" [alt]="user.name">
+                                </div>
+                                <div class="comment-wrap" *ngFor="let user of getAuthor(review.user)">
+                                    <div class="comment-author-content">
+                                        <span class="author-name">{{user.name}} <span class="date">{{review.commentdate}}</span></span>
+                                        <p>{{review.comment}}</p>
+                                        <a href="#" class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Data -->
+                        </ul>
+                    </div>
+                    <!-- Comment Form -->
+                    <div class="comments-respond" id="comment-respond">
+                        <h4 class="comments-heading">Leave A Reply</h4>
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Full Name" name="name"
+                                            required="">
+                                        <i class="far fa-user-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email " name="email"
+                                            required="">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Write Message"
+                                            name="message"></textarea>
+                                        <i class="far fa-pencil-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button class="filled-btn">Send Comments <i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- /.blog-details-content -->
+            </div>
+            <div class="col-lg-4">
+                <app-blog-sidebar></app-blog-sidebar>
+            </div>
+        </div> <!-- /row -->
+    </div> <!-- .container -->
+</section>

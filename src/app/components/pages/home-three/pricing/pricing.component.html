@@ -1,0 +1,61 @@
+<section class="pricing-area pt-130 pb-109">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="pricing-area-content content-right-spacer">
+                    <div class="section-title section-title-tuna">
+                        <h2>Choose The Best Package For Your <br class="d-none d-lg-block">
+                            <span>Applications</span>
+                        </h2>
+                        <div class="section-title-description">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremq ue laudante totam rem aperiam</p>
+                        </div>
+                    </div>
+                    <div class="simple-counter-up">
+                        <div class="row">
+                            <!-- Data -->
+                            <div class="col-md-6" *ngFor="let item of counter | slice:0:2">
+                                <div class="single-counter-up single-counter-up-v2">
+                                    <div class="counterup-info">
+                                        <h2>
+                                            <span class="counter" [countUp]="item.valuetwo">0</span>
+                                            <span class="sign">+</span>
+                                        </h2>
+                                        <p>{{item.title}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Data -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-7">
+                <div class="pricing-table-wrapper">
+                    <div class="pricing-table pricing-table-v2 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms" *ngFor="let item of plans | slice:0:2">
+                        <div class="pricing-plan-title">
+                            <div class="pricing-table-icon">
+                                <h5 class="plan-title" [ngClass]="item.btnstyle">{{item.plantitle}}</h5>
+                            </div>
+                            <div class="pricing-plan-features">
+                                <ul>
+                                    <li class="plan-feature" *ngFor="let list of item.includes | slice:0:3">{{list}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-table-foot">
+                            <div class="pricing-plan-cost">
+                                <span class="payment-currency">$</span>
+                            <span class="plan-price">{{item.price}}</span>
+                            <span class="plan-type">/ {{item.period}}</span>
+                            </div>
+                            <div class="plan-select">
+                                <a routerLink="/contact" class="filled-btn" [ngClass]="item.btnstyle">Select Plan <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>

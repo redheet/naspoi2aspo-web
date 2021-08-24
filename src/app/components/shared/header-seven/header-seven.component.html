@@ -1,0 +1,48 @@
+<header class="header-area header-v5">
+    <div class="header-navigation" [ngClass]="[visible ? '' : 'breakpoint-on' , windowScrolled ? 'sticky':'']"
+        (window:resize)="detectHeader()">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Brand Logo and Language Selection Dropdown -->
+                <div class="col-xl-3 col-6">
+                    <div class="site-branding-and-language-selection">
+                        <div class="brand-logo">
+                            <a routerLink="/">
+                                <img src="assets/img/logo-royal-blue.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Right -->
+                <div class="col-xl-9 col-6">
+                    <div class="header-right">
+                        <ul>
+                            <li><a href="javascript:void(0)" class="search-btn" (click)="openSearch(searchmodal)"><i class="fas fa-search"></i></a></li>
+                            <li class="nav-tools">
+                                <a href="javascript:void(0)" class="icon off-menu" (click)="toggleCanvas()">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                                <div class="offcanvas-panel" [ngClass]="canvasMethod ? 'panel-on':''">
+                                    <div class="menu-overlay" (click)="toggleCanvas()"></div>
+                                    <div class="offcanvas-panel-inner">
+                                        <app-canvas></app-canvas>
+                                        <a href="javascript:void(0)" class="panel-close" (click)="toggleCanvas()">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container-fluid -->
+    </div> <!-- /.header-navigation -->
+</header>
+<ng-template #searchmodal let-modal>
+    <app-search-box></app-search-box>
+</ng-template>

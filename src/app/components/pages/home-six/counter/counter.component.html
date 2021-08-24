@@ -1,0 +1,21 @@
+<div class="fact-area pb-35">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="row">
+                <!-- Data -->
+                <div class="col-md-4" *ngFor="let item of counter | slice:0:3">
+                    <div class="single-counter-up single-counter-up-v2 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1500ms">
+                        <div class="counterup-info">
+                            <h2>
+                                <span class="counter" [countUp]="item.valuetwo">0</span>
+                                <span class="sign">+</span>
+                            </h2>
+                            <p>{{item.title}}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Data -->
+            </div>
+        </div>
+    </div>
+</div>

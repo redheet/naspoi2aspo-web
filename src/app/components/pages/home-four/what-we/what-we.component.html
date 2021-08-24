@@ -1,0 +1,42 @@
+<section class="our-services pt-120 pb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title text-center mb-120 section-title-mirage">
+          <div class="section-heading-tag">
+            <span class="single-heading-tag">Our Categories</span>
+          </div>
+          <h2>
+            Select Categories For <br class="d-none d-md-block" />Joining
+            <span>The Event</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-xl-10">
+        <div class="row">
+          <!-- Data -->
+          <div class="col-lg-6" *ngFor="let item of whatwe">
+            <div
+              class="single-feature-box single-feature-box-v2 wow fadeInUp"
+              [ngClass]="item.style"
+              data-wow-delay="0.4s"
+            >
+              <div class="feature-box-icon">
+                <i [class]="item.icon"></i>
+              </div>
+              <div class="feature-box-content">
+                <h4>{{ item.title }}</h4>
+                <p>{{ item.text }}</p>
+              </div>
+            </div>
+          </div>
+          <!-- Data -->
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>

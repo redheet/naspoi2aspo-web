@@ -1,0 +1,41 @@
+<section class="app-feature pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="app-feature-content">
+                    <div class="section-title">
+                        <div class="section-heading-tag">
+                            <span class="single-heading-tag">Core features</span>
+                        </div>
+                        <h2>How can we help your problems</h2>
+                        <div class="section-title-description">
+                            <p>Sed perspicias unde omnis iste natus error voluptatem accusantium dolorem laudanme totam rem aperiam eaque quae.</p>
+                        </div>
+                        <div class="section-button-wrapper">
+                            <a routerLink="/about" class="filled-btn">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="app-features-list">
+                    <!-- Data -->
+                    <div class="single-service-box wow fadeInDown" [ngClass]="item.active ? 'active':''" data-wow-delay="100ms" data-wow-duration="2500ms" *ngFor="let item of feature | slice:0:2">
+                        <div class="service-thumbnail">
+                            <img [src]="item.image" [alt]="item.title">
+                        </div>
+                        <div class="service-box-content">
+                            <h5 class="service-box-title">Faster and trusted grow solutions</h5>
+                            <div class="service-box-btn">
+                                <a routerLink="/about"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Data -->
+                </div>
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>

@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "title":"Landing"
+    },
+    {
+        "id":2,
+        "title":"UI Design"
+    },
+    {
+        "id":3,
+        "title":"Web"
+    },
+    {
+        "id":4,
+        "title":"SEO"
+    },
+    {
+        "id":5,
+        "title":"Development"
+    },
+    {
+        "id":6,
+        "title":"UI/UX"
+    },
+    {
+        "id":7,
+        "title":"Consulting"
+    },
+    {
+        "id":8,
+        "title":"Mobile Apps"
+    }
+]

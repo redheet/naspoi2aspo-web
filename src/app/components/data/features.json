@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "image":"assets/img/services/app-feature-1.png",
+        "title":"Faster and trusted grow solutions",
+        "active":true
+    },
+    {
+        "id":2,
+        "image":"assets/img/services/app-feature-2.png",
+        "title":"Strategy buildup for web software",
+        "active":false
+    }
+]

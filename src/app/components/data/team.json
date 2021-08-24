@@ -1,0 +1,234 @@
+[
+    {
+        "id":1,
+        "image":"assets/img/team/member-1.jpg",
+        "name":"Donald L. Juarez",
+        "post":"CEO & Founder",
+        "shorttext":"Quis autem veleum iure reprehenderit quinea voluptate esse quam molestiae consequatu velillum dolorem fugiat quo voluptas nulla pariano one rejects dislikes",
+        "social":[
+            {
+                "title":"",
+                "icon":"fab fa-facebook-f",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-twitter",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-youtube",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-behance",
+                "link":"/"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "image":"assets/img/team/member-2.jpg",
+        "name":"Marcus L. Duncan",
+        "post":"Head of Ideas",
+        "shorttext":"Quis autem veleum iure reprehenderit quinea voluptate esse quam molestiae consequatu velillum dolorem fugiat quo voluptas nulla pariano one rejects dislikes",
+        "social":[
+            {
+                "title":"",
+                "icon":"fab fa-facebook-f",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-twitter",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-youtube",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-behance",
+                "link":"/"
+            }
+        ]
+    },
+    {
+        "id":3,
+        "image":"assets/img/team/member-3.jpg",
+        "name":"Evan A. Ethridge",
+        "post":"Creative Head",
+        "shorttext":"Quis autem veleum iure reprehenderit quinea voluptate esse quam molestiae consequatu velillum dolorem fugiat quo voluptas nulla pariano one rejects dislikes",
+        "social":[
+            {
+                "title":"",
+                "icon":"fab fa-facebook-f",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-twitter",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-youtube",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-behance",
+                "link":"/"
+            }
+        ]
+    },
+    {
+        "id":4,
+        "image":"assets/img/team/member-4.jpg",
+        "name":"Donald T. Lewis",
+        "post":"JS Developer",
+        "shorttext":"Quis autem veleum iure reprehenderit quinea voluptate esse quam molestiae consequatu velillum dolorem fugiat quo voluptas nulla pariano one rejects dislikes",
+        "social":[
+            {
+                "title":"",
+                "icon":"fab fa-facebook-f",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-twitter",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-youtube",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-behance",
+                "link":"/"
+            }
+        ]
+    },
+    {
+        "id":5,
+        "image":"assets/img/team/member-5.jpg",
+        "name":"Gracie T. Evans",
+        "post":"Marketer",
+        "shorttext":"Quis autem veleum iure reprehenderit quinea voluptate esse quam molestiae consequatu velillum dolorem fugiat quo voluptas nulla pariano one rejects dislikes",
+        "social":[
+            {
+                "title":"",
+                "icon":"fab fa-facebook-f",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-twitter",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-youtube",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-behance",
+                "link":"/"
+            }
+        ]
+    },
+    {
+        "id":6,
+        "image":"assets/img/team/member-6.jpg",
+        "name":"Joseph Anderson",
+        "post":"UI Designer",
+        "shorttext":"Quis autem veleum iure reprehenderit quinea voluptate esse quam molestiae consequatu velillum dolorem fugiat quo voluptas nulla pariano one rejects dislikes",
+        "social":[
+            {
+                "title":"",
+                "icon":"fab fa-facebook-f",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-twitter",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-youtube",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-behance",
+                "link":"/"
+            }
+        ]
+    },
+    {
+        "id":7,
+        "image":"assets/img/team/member-7.jpg",
+        "name":"Allan J. Sumlin",
+        "post":"Shopify Expert",
+        "shorttext":"Quis autem veleum iure reprehenderit quinea voluptate esse quam molestiae consequatu velillum dolorem fugiat quo voluptas nulla pariano one rejects dislikes",
+        "social":[
+            {
+                "title":"",
+                "icon":"fab fa-facebook-f",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-twitter",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-youtube",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-behance",
+                "link":"/"
+            }
+        ]
+    },
+    {
+        "id":8,
+        "image":"assets/img/team/member-8.jpg",
+        "name":"Brian D. Rogers",
+        "post":"Head of Ideas",
+        "shorttext":"Quis autem veleum iure reprehenderit quinea voluptate esse quam molestiae consequatu velillum dolorem fugiat quo voluptas nulla pariano one rejects dislikes",
+        "social":[
+            {
+                "title":"",
+                "icon":"fab fa-facebook-f",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-twitter",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-youtube",
+                "link":"/"
+            },
+            {
+                "title":"",
+                "icon":"fab fa-behance",
+                "link":"/"
+            }
+        ]
+    }
+]

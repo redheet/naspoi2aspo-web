@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "icon": "flaticon-layers-2",
+    "title": "Waste treatment",
+    "text": "Waste treatment refers to the activities required to ensure that waste has the least practicable impact on the environment",
+    "style": "single-feature-box-v2-color-1"
+  },
+  {
+    "id": 2,
+    "icon": "flaticon-digital-marketing",
+    "title": "IoT and Its Applications",
+    "text": "The main aim of Internet of Things (IoT) technology is to make the life of human beings easier, faster and smarter by automatically solve the various problems",
+    "style": "single-feature-box-v2-color-2"
+  },
+  {
+    "id": 3,
+    "icon": "flaticon-targeting",
+    "title": "Functional Food",
+    "text": "A functional food is a food claimed to have an additional function by adding new ingredients or more of existing ingredients.",
+    "style": "single-feature-box-v2-color-3"
+  },
+  {
+    "id": 4,
+    "icon": "flaticon-crown-1",
+    "title": "Energy",
+    "text": "In physics, energy is the quantitative property that must be transferred to a body or physical system to perform work on the body, or to heat it.",
+    "style": "single-feature-box-v2-color-4"
+  },
+  {
+    "id": 5,
+    "icon": "flaticon-microphone",
+    "title": "Research on Children with Special Needs",
+    "text": "-",
+    "style": "single-feature-box-v2-color-1"
+  },
+  {
+    "id": 6,
+    "icon": "flaticon-medal-1",
+    "title": "Entrepreneurship",
+    "text": "Entrepreneurship is an act of being an entrepreneur, or 'the owner or manager of a business enterprise who, by risk and initiative, attempts to make profits'.",
+    "style": "single-feature-box-v2-color-3"
+  }
+]

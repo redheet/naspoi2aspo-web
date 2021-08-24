@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="225.344" height="218.32" viewBox="0 0 225.344 218.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #edf2fd;
+        fill-rule: evenodd;
+        opacity: 0.7;
+      }
+    </style>
+  </defs>
+  <path id="pricing-blob.svg" class="cls-1" d="M675.762,6280.79c27.519-33.95,38.271-67.86,19.8-107.55-44.452-95.53-192.815-73.8-213.55-32.81-19.531,38.6,77.819,48.49,80.344,152.05C563.555,6341.55,636.194,6329.6,675.762,6280.79Z" transform="translate(-479.406 -6105.56)"/>
+</svg>

@@ -1,0 +1,34 @@
+<section class="hero-area hero-v6">
+    <ngx-slick-carousel [config]="settings" class="hero-slider">
+        <!-- Data -->
+        <div class="hero-slide-single" [style.background-image]="'url('+item.image+')'" ngxSlickItem *ngFor="let item of banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="hero-content">
+                            <div class="section-title section-title-white">
+                                <h1 data-animation="fadeInUp" data-delay=".1s">{{item.title}}</h1>
+                                <div class="section-title-quote" data-animation="fadeInUp" data-delay=".2s">
+                                    <p>{{item.text}} </p>
+                                </div>
+                                <div class="section-button-wrapper section-dual-button" data-animation="fadeInUp" data-delay=".3s">
+                                    <span>
+                                        <a routerLink="/services" class="filled-btn bg-clear-blue">
+                                            Get Started Now <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </span>
+                                    <span class="play-video">
+                                        <a href="https://www.youtube.com/watch?v=TKnufs85hXk" class="hero-btn popup-youtube">
+                                            How We Works
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Data -->
+    </ngx-slick-carousel> <!-- /.hero-slider -->
+</section>

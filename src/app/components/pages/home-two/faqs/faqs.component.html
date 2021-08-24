@@ -1,0 +1,87 @@
+<section class="faq-area bg-magnolia pt-130 pb-130">
+  <div class="container">
+    <div class="section-internal">
+      <div
+        class="
+          section-particle-effect
+          d-none d-md-block
+          section-particle-effect-v2
+        "
+      >
+        <img
+          class="particle-1 animate-zoom-fade"
+          src="assets/img/particle/particle-1.png"
+          alt="particle One"
+        />
+        <img
+          class="particle-2 animate-rotate-me"
+          src="assets/img/particle/particle-2.png"
+          alt="particle Two"
+        />
+        <img
+          class="particle-3 animate-float-bob-x"
+          src="assets/img/particle/particle-3.png"
+          alt="particle Three"
+        />
+        <img
+          class="particle-4 animate-zoominout"
+          src="assets/img/particle/particle-4.png"
+          alt="particle Four"
+        />
+        <img
+          class="particle-5 animate-zoominout"
+          src="assets/img/particle/particle-5.png"
+          alt="particle Five"
+        />
+        <img
+          class="particle-7 animate-float-bob-x"
+          src="assets/img/particle/particle-7.png"
+          alt="particle Seven"
+        />
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="faq-content content-right-spacer">
+            <div class="section-title section-title-ocean-blue">
+              <div class="section-heading-tag">
+                <span class="single-heading-tag">Petunjuk</span>
+              </div>
+              <h2>Kalian <span>Bingung</span>?</h2>
+            </div>
+            <div class="section-accordion">
+              <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                <ngb-panel
+                  id="static-{{ 1 + i }}"
+                  *ngFor="let item of faqs | slice: 0:4; let i = index"
+                >
+                  <ng-template ngbPanelTitle>
+                    {{ item.title }}
+                  </ng-template>
+                  <ng-template ngbPanelContent>
+                    <p>{{ item.text }}</p>
+                    <p>{{ item.bagian2 }}</p>
+                    <p>{{ item.bagian3 }}</p>
+                    <p>{{ item.bagian4 }}</p>
+                  </ng-template>
+                </ngb-panel>
+              </ngb-accordion>
+              <!-- /.accordion -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div
+            class="section-right-image animate-float-bob-y wow fadeInUp"
+            data-wow-delay="0ms"
+            data-wow-duration="2500ms"
+          >
+            <img src="assets/img/faq/faq-image.png" alt="faq image" />
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.section-internal -->
+  </div>
+  <!-- /.container -->
+</section>

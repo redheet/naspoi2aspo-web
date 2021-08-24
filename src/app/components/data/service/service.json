@@ -1,0 +1,140 @@
+[
+    {
+        "id": 1,
+        "title": "Easy Editable",
+        "imageicon": "assets/img/feature/service-icon-1.png",
+        "vectorimage": "assets/img/services/service-thumbnail-1.png",
+        "image": "assets/img/services/service-thumbnail-1.jpg",
+        "icon": "flaticon-goal-1",
+        "shorttext": "Quis autem veleum iure reprehende quin voluptate velit esse quam molesti conseqtur velillum dolorem eum fugiate",
+        "workprocess": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "faqs": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "quote": "On the other hand, we denounce with righteous indignation and dislike men who are beguiled demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure'",
+        "htmltext": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p><div class='image-block'><div class='row'><div class='col-md-6'><div class='animate-square-zoom wow fadeInUp' data-wow-delay='100ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-1.jpg' alt='service details one'></div></div><div class='col-md-6'><div class='animate-square-zoom wow fadeInDown' data-wow-delay='200ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-2.jpg' alt='service details two'></div></div></div></div><h3>Results For Email Marketing In Business</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam</p>"
+    },
+    {
+        "id": 2,
+        "title": "Fully Responsive",
+        "imageicon": "assets/img/feature/service-icon-2.png",
+        "vectorimage": "assets/img/services/service-thumbnail-2.png",
+        "image": "assets/img/services/service-thumbnail-2.jpg",
+        "icon": "flaticon-talk-show-1",
+        "shorttext": "Quis autem veleum iure reprehende quin voluptate velit esse quam molesti conseqtur velillum dolorem eum fugiate",
+        "workprocess": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "faqs": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "quote": "On the other hand, we denounce with righteous indignation and dislike men who are beguiled demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure'",
+        "htmltext": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p><div class='image-block'><div class='row'><div class='col-md-6'><div class='animate-square-zoom wow fadeInUp' data-wow-delay='100ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-1.jpg' alt='service details one'></div></div><div class='col-md-6'><div class='animate-square-zoom wow fadeInDown' data-wow-delay='200ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-2.jpg' alt='service details two'></div></div></div></div><h3>Results For Email Marketing In Business</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam</p>"
+    },
+    {
+        "id": 3,
+        "title": "Server Solutions",
+        "imageicon": "assets/img/feature/service-icon-3.png",
+        "vectorimage": "assets/img/services/service-thumbnail-3.png",
+        "image": "assets/img/services/service-thumbnail-3.jpg",
+        "icon": "flaticon-layers-2",
+        "shorttext": "Quis autem veleum iure reprehende quin voluptate velit esse quam molesti conseqtur velillum dolorem eum fugiate",
+        "workprocess": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "faqs": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "quote": "On the other hand, we denounce with righteous indignation and dislike men who are beguiled demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure'",
+        "htmltext": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p><div class='image-block'><div class='row'><div class='col-md-6'><div class='animate-square-zoom wow fadeInUp' data-wow-delay='100ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-1.jpg' alt='service details one'></div></div><div class='col-md-6'><div class='animate-square-zoom wow fadeInDown' data-wow-delay='200ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-2.jpg' alt='service details two'></div></div></div></div><h3>Results For Email Marketing In Business</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam</p>"
+    },
+    {
+        "id": 4,
+        "title": "Creative Design",
+        "imageicon": "assets/img/feature/service-icon-4.png",
+        "vectorimage": "assets/img/services/service-thumbnail-4.png",
+        "image": "assets/img/services/service-thumbnail-4.jpg",
+        "icon": "flaticon-diamond-1",
+        "shorttext": "Quis autem veleum iure reprehende quin voluptate velit esse quam molesti conseqtur velillum dolorem eum fugiate",
+        "workprocess": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "faqs": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "quote": "On the other hand, we denounce with righteous indignation and dislike men who are beguiled demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure'",
+        "htmltext": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p><div class='image-block'><div class='row'><div class='col-md-6'><div class='animate-square-zoom wow fadeInUp' data-wow-delay='100ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-1.jpg' alt='service details one'></div></div><div class='col-md-6'><div class='animate-square-zoom wow fadeInDown' data-wow-delay='200ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-2.jpg' alt='service details two'></div></div></div></div><h3>Results For Email Marketing In Business</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam</p>"
+    },
+    {
+        "id": 5,
+        "title": "Well Documentation",
+        "imageicon": "assets/img/feature/service-icon-5.png",
+        "vectorimage": "assets/img/services/service-thumbnail-5.png",
+        "image": "assets/img/services/service-thumbnail-1.jpg",
+        "icon": "flaticon-certificate-1",
+        "shorttext": "Quis autem veleum iure reprehende quin voluptate velit esse quam molesti conseqtur velillum dolorem eum fugiate",
+        "workprocess": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "faqs": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "quote": "On the other hand, we denounce with righteous indignation and dislike men who are beguiled demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure'",
+        "htmltext": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p><div class='image-block'><div class='row'><div class='col-md-6'><div class='animate-square-zoom wow fadeInUp' data-wow-delay='100ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-1.jpg' alt='service details one'></div></div><div class='col-md-6'><div class='animate-square-zoom wow fadeInDown' data-wow-delay='200ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-2.jpg' alt='service details two'></div></div></div></div><h3>Results For Email Marketing In Business</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam</p>"
+    },
+    {
+        "id": 6,
+        "title": "Quick Linkup",
+        "imageicon": "assets/img/feature/service-icon-6.png",
+        "vectorimage": "assets/img/services/service-thumbnail-6.png",
+        "image": "assets/img/services/service-thumbnail-2.jpg",
+        "icon": "flaticon-rss-1",
+        "shorttext": "Quis autem veleum iure reprehende quin voluptate velit esse quam molesti conseqtur velillum dolorem eum fugiate",
+        "workprocess": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "faqs": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "quote": "On the other hand, we denounce with righteous indignation and dislike men who are beguiled demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure'",
+        "htmltext": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p><div class='image-block'><div class='row'><div class='col-md-6'><div class='animate-square-zoom wow fadeInUp' data-wow-delay='100ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-1.jpg' alt='service details one'></div></div><div class='col-md-6'><div class='animate-square-zoom wow fadeInDown' data-wow-delay='200ms' data-wow-duration='1500ms'> <img src='assets/img/services/service-details-thumbnail-2.jpg' alt='service details two'></div></div></div></div><h3>Results For Email Marketing In Business</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam</p>"
+    }
+]

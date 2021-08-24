@@ -1,0 +1,38 @@
+<section class="testimonial-area overflow-hidden border-0 pb-120">
+    <div class="container">
+        <div class="section-internal">
+            <div class="section-particle-effect d-none d-lg-block section-particle-effect-v2">
+                <img class="particle-1 animate-zoom-fade" src="assets/img/testimonial/testimonial-bg-author-1.png" alt="particle One">
+                <img class="particle-3 animate-float-bob-x" src="assets/img/testimonial/testimonial-bg-author-2.png" alt="particle two">
+                <img class="particle-5 animate-zoom-fade" src="assets/img/testimonial/testimonial-bg-author-3.png" alt="particle three">
+                <img class="particle-7 animate-float-bob-y" src="assets/img/testimonial/testimonial-bg-author-4.png" alt="particle four">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center section-title-clear-blue mb-33">
+                        <div class="section-heading-tag">
+                            <span class="single-heading-tag">Client Reviews</span>
+                        </div>
+                        <h2>What Our Clients Say About <br class="d-none d-md-block"> Our Solutions</h2>
+                    </div>
+                </div>
+            </div>
+            <ngx-slick-carousel [config]="settings" class="testimonial-slider" id="testimonial-slider-v5">
+                <!-- Data -->
+                <div class="single-testimonial single-testimonial-v6" ngxSlickItem *ngFor="let item of testimonials">
+                    <div class="testimonial-author-quote" *ngFor="let author of getAuthor(item.author)">
+                        <img [src]="author.image" [alt]="author.name">
+                        <i class="flaticon-right-quote"></i>
+                    </div>
+                    <div class="single-testimonial-body" *ngFor="let author of getAuthor(item.author)">
+                        <p class="testimonial-message">{{item.comment | slice:0:100}}</p>
+                        <div class="testimonial-author">
+                            <h6>{{author.name}} <span>{{author.post}}</span></h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Data -->
+            </ngx-slick-carousel> <!-- /.testimonial-slider -->
+        </div> <!-- /.section-internal -->
+    </div> <!-- /.container -->
+</section>

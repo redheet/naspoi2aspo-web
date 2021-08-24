@@ -1,0 +1,53 @@
+<div class="posts-sidebar">
+    <div class="widget search-widget wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1200ms">
+        <h4>Search Here</h4>
+        <form (ngSubmit)="onSubmit()" method="GET">
+            <div class="form-group">
+                <input type="search" class="form-control" placeholder="Search" name="searchText"
+                    [(ngModel)]="searchText" required>
+                <button class="search-btn" type="submit"><i class="far fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+    <div class="widget category-widget wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1200ms">
+        <h4 class="sidebar-widget-title">Category</h4>
+        <ul class="category-link">
+            <!-- Data -->
+            <li *ngFor="let item of category">
+                <a routerLink="/blog/cat/{{item.id}}">
+                    {{item.title}}
+                </a>
+            </li>
+            <!-- Data -->
+        </ul>
+    </div>
+    <div class="widget latest-post-widget wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1200ms">
+        <h4 class="sidebar-widget-title">Latest News</h4>
+        <div class="popular-posts-wrapper">
+            <!-- Data -->
+            <div class="popular-posts-item" *ngFor="let item of getRecentPost()">
+                <div class="popular-posts-thumbnail">
+                    <a routerLink="/blog-details/{{item.id}}">
+                        <img [src]="item.image[0]" [alt]="item.title">
+                    </a>
+                </div>
+                <div class="popular-posts-item-content">
+                    <h5 class="popular-posts-title"><a routerLink="/blog-details/{{item.id}}">{{item.title |
+                            slice:0:40}}...</a></h5>
+                    <a routerLink="/blog-details/{{item.id}}" class="posts-date"><i class="far fa-calendar-alt"></i>
+                        {{item.postdate}}</a>
+                </div>
+            </div>
+            <!-- Data -->
+        </div>
+    </div>
+    <div class="widget widget-testimonial wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1200ms">
+        <app-single-testimonials></app-single-testimonials>
+    </div>
+    <div class="widget widget-tag-cloud wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1200ms">
+        <h4 class="sidebar-widget-title">Popular Tags</h4>
+        <!-- Data -->
+        <a routerLink="/blog/tag/{{item.id}}" *ngFor="let item of tags">{{item.title}}</a>
+        <!-- Data -->
+    </div>
+</div>

@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "icon":"assets/img/hero/infobox-icon-1.png",
+        "title":"Deserve Your Success",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanti doloremque laudantium totam rem aperiam"
+    },
+    {
+        "id":2,
+        "icon":"assets/img/hero/infobox-icon-2.png",
+        "title":"Optimize Your Presence",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanti doloremque laudantium totam rem aperiam"
+    }
+]

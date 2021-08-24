@@ -1,0 +1,37 @@
+<div
+  class="brands-area wow fadeInUp"
+  data-wow-delay="00ms"
+  data-wow-duration="2500ms"
+>
+  <div class="container">
+    <div class="section-internal border-bottom pt-75 pb-80">
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          <div class="brands-content">
+            <div class="brands-section-title">
+              <h3><span>Organized</span> by</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <ngx-slick-carousel
+            [config]="settings"
+            class="brands-slider"
+            id="brands-slider"
+          >
+            <!-- Data -->
+            <div class="brands-item" ngxSlickItem *ngFor="let item of partners">
+              <a href="{{ item.link }}"
+                ><img [src]="item.image" alt="brand ten"
+              /></a>
+            </div>
+            <!-- Data -->
+          </ngx-slick-carousel>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.section-internal -->
+  </div>
+  <!-- /.container -->
+</div>

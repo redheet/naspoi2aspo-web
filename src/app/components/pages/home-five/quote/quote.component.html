@@ -1,0 +1,66 @@
+<section class="contact-area pt-120 pb-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center mb-75">
+                    <h2>Need Free Consultation to <br class="d-none d-md-block">Your Next Project</h2>
+                </div>
+            </div>
+        </div> <!-- /.row -->
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-box-wrapper">
+                            <div class="single-contact-box wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1500ms">
+                                <h4>Ready to Work Together For Better Solutions </h4>
+                                <a routerLink="/team" class="filled-btn btn-bordered bg-royal-blue">
+                                    Join with us <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="single-contact-box wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1500ms">
+                                <h4>Build A Better Career <br class="d-none d-xl-block"> With <span>Landio</span></h4>
+                                <a routerLink="/about" class="filled-btn btn-bordered bg-royal-blue">
+                                    View Our Jobs <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="contact-form-area contact-form-area-v2 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1500ms">
+                    <div class="contact-respond">
+                        <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="fullName" placeholder="Your Full Name" formControlName="fullname">
+                                <label for="fullName">Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="yourEmail" placeholder="Email Address" formControlName="email">
+                                <label for="emailAddress">Email</label>
+                            </div>
+                            <div class="input-group">
+                                <div class="subject-dropdown">
+                                    <select class="nice-select" formControlName="subject" nice-select>
+                                        <option>Subject You Like</option>
+                                        <option value="aboutus">About Us</option>
+                                        <option value="sayhello">Say Hello</option>
+                                        <option value="askme">Ask Me</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group form-textarea">
+                                <textarea class="form-control" placeholder="Write Message" formControlName="message"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <div class="input-group">
+                                <button type="submit" class="filled-btn" [disabled]="!quoteForm.valid">Get Free Quote <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>

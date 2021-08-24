@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "author": [
+            1
+        ],
+        "rating": 5,
+        "client": [
+            1
+        ],
+        "comment": "Sed ut perspicia unde omnis natus error sit volupt accusantium doloremque laudantium totam rem aperiam eaque quae"
+    },
+    {
+        "id": 2,
+        "author": [
+            2
+        ],
+        "rating": 5,
+        "client": [
+            2
+        ],
+        "comment": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae conse quatur vellum rem"
+    },
+    {
+        "id": 3,
+        "author": [
+            3
+        ],
+        "rating": 4,
+        "client": [
+            3
+        ],
+        "comment": "On the other hand denounce with righteous indignation dislike men who are so beguiled and demoralized by charms"
+    },
+    {
+        "id": 4,
+        "author": [
+            4
+        ],
+        "rating": 4,
+        "client": [
+            4
+        ],
+        "comment": "Sed ut perspicia unde omnis natus error sit volupt accusantium doloremque laudantium totam rem aperiam eaque quae"
+    },
+    {
+        "id": 5,
+        "author": [
+            5
+        ],
+        "rating": 4,
+        "client": [
+            5
+        ],
+        "comment": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae conse quatur vellum rem"
+    },
+    {
+        "id": 6,
+        "author": [
+            7
+        ],
+        "rating": 3,
+        "client": [
+            6
+        ],
+        "comment": "On the other hand denounce with righteous indignation dislike men who are so beguiled and demoralized by charms"
+    }
+]

@@ -1,0 +1,43 @@
+<section class="features-area">
+    <div class="container">
+        <div class="section-internal pt-130 pb-93 border-bottom">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="section-title section-title-tuna">
+                        <div class="section-heading-tag">
+                            <span class="single-heading-tag p-0 text-old-lavender bordered-tag">How Can Help You</span>
+                        </div>
+                        <h2>Build an Awesome
+                            <span>Apps With</span>
+                            Us
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="icon-boxes-wrapper">
+                        <div class="row">
+                            <!-- Data -->
+                            <div class="col-lg-6 col-md-6"  *ngFor="let item of block | slice:0:2">
+                                <div class="single-iconic-box wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <div class="iconic-box-icon iconic-box-gradient-{{item.id}}">
+                                        <i class="far fa-cog"></i>
+                                    </div>
+                                    <div class="iconic-box-body">
+                                        <h5 class="iconic-box-title">{{item.title}}</h5>
+                                        <p class="iconic-box-content">
+                                            {{item.text}}
+                                        </p>
+                                        <div class="iconic-box-btn">
+                                            <a href="service-details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Data -->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.section-internal -->
+    </div> <!-- /.container -->
+</section> 
