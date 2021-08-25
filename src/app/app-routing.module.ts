@@ -17,14 +17,14 @@ const routes: Routes = [
       ),
     data: { breadcrumb: 'Homepage' },
   },
-  {
-    path: 'home-v3',
-    loadChildren: () =>
-      import('./components/pages/home-three/home-three.module').then(
-        (m) => m.HomeThreeModule
-      ),
-    data: { breadcrumb: 'Homepage' },
-  },
+  // {
+  //   path: 'home-v3',
+  //   loadChildren: () =>
+  //     import('./components/pages/home-three/home-three.module').then(
+  //       (m) => m.HomeThreeModule
+  //     ),
+  //   data: { breadcrumb: 'Homepage' },
+  // },
   {
     path: 'i2aspo',
     loadChildren: () =>
@@ -33,39 +33,39 @@ const routes: Routes = [
       ),
     data: { breadcrumb: 'Homepage' },
   },
-  {
-    path: 'home-v5',
-    loadChildren: () =>
-      import('./components/pages/home-five/home-five.module').then(
-        (m) => m.HomeFiveModule
-      ),
-    data: { breadcrumb: 'Homepage' },
-  },
-  {
-    path: 'home-v6',
-    loadChildren: () =>
-      import('./components/pages/home-six/home-six.module').then(
-        (m) => m.HomeSixModule
-      ),
-    data: { breadcrumb: 'Homepage' },
-  },
-  // Services
-  {
-    path: 'services',
-    loadChildren: () =>
-      import('./components/pages/services/services.module').then(
-        (m) => m.ServicesModule
-      ),
-    data: { breadcrumb: 'Services' },
-  },
-  {
-    path: 'service-details/:id',
-    loadChildren: () =>
-      import('./components/pages/service-details/service-details.module').then(
-        (m) => m.ServiceDetailsModule
-      ),
-    data: { breadcrumb: 'Service Details' },
-  },
+  // {
+  //   path: 'home-v5',
+  //   loadChildren: () =>
+  //     import('./components/pages/home-five/home-five.module').then(
+  //       (m) => m.HomeFiveModule
+  //     ),
+  //   data: { breadcrumb: 'Homepage' },
+  // },
+  // {
+  //   path: 'home-v6',
+  //   loadChildren: () =>
+  //     import('./components/pages/home-six/home-six.module').then(
+  //       (m) => m.HomeSixModule
+  //     ),
+  //   data: { breadcrumb: 'Homepage' },
+  // },
+  // // Services
+  // {
+  //   path: 'services',
+  //   loadChildren: () =>
+  //     import('./components/pages/services/services.module').then(
+  //       (m) => m.ServicesModule
+  //     ),
+  //   data: { breadcrumb: 'Services' },
+  // },
+  // {
+  //   path: 'service-details/:id',
+  //   loadChildren: () =>
+  //     import('./components/pages/service-details/service-details.module').then(
+  //       (m) => m.ServiceDetailsModule
+  //     ),
+  //   data: { breadcrumb: 'Service Details' },
+  // },
   // Pricing
   // {
   //   path: 'pricing',
@@ -76,93 +76,93 @@ const routes: Routes = [
   //   data: { breadcrumb: 'Pricing' },
   // },
   // Pages
-  {
-    path: 'about',
-    loadChildren: () =>
-      import('./components/pages/about/about.module').then(
-        (m) => m.AboutModule
-      ),
-    data: { breadcrumb: 'About Us' },
-  },
-  {
-    path: 'team',
-    loadChildren: () =>
-      import('./components/pages/team/team.module').then((m) => m.TeamModule),
-    data: { breadcrumb: 'Team' },
-  },
-  {
-    path: 'coming-soon',
-    loadChildren: () =>
-      import('./components/pages/coming-soon/coming-soon.module').then(
-        (m) => m.ComingSoonModule
-      ),
-    data: { breadcrumb: 'Coming Soon' },
-  },
-  {
-    path: 'error',
-    loadChildren: () =>
-      import('./components/pages/error-page/error-page.module').then(
-        (m) => m.ErrorPageModule
-      ),
-    data: { breadcrumb: 'Error 404' },
-  },
-  // Blog
-  {
-    path: 'blog/search/:query',
-    loadChildren: () =>
-      import('./components/pages/blog-grid/blog-grid.module').then(
-        (m) => m.BlogGridModule
-      ),
-    data: { breadcrumb: 'Blog Grid' },
-  },
-  {
-    path: 'blog/cat/:catId',
-    loadChildren: () =>
-      import('./components/pages/blog-grid/blog-grid.module').then(
-        (m) => m.BlogGridModule
-      ),
-    data: { breadcrumb: 'Blog Grid' },
-  },
-  {
-    path: 'blog/tag/:tagId',
-    loadChildren: () =>
-      import('./components/pages/blog-grid/blog-grid.module').then(
-        (m) => m.BlogGridModule
-      ),
-    data: { breadcrumb: 'Blog Grid' },
-  },
-  {
-    path: 'blog/author/:authorId',
-    loadChildren: () =>
-      import('./components/pages/blog-grid/blog-grid.module').then(
-        (m) => m.BlogGridModule
-      ),
-    data: { breadcrumb: 'Blog Grid' },
-  },
-  {
-    path: 'blog-grid',
-    loadChildren: () =>
-      import('./components/pages/blog-grid/blog-grid.module').then(
-        (m) => m.BlogGridModule
-      ),
-    data: { breadcrumb: 'Blog Grid' },
-  },
-  {
-    path: 'blog-standard',
-    loadChildren: () =>
-      import('./components/pages/blog-list/blog-list.module').then(
-        (m) => m.BlogListModule
-      ),
-    data: { breadcrumb: 'Blog Standard' },
-  },
-  {
-    path: 'blog-details/:id',
-    loadChildren: () =>
-      import('./components/pages/blog-details/blog-details.module').then(
-        (m) => m.BlogDetailsModule
-      ),
-    data: { breadcrumb: 'Blog Details' },
-  },
+  // {
+  //   path: 'about',
+  //   loadChildren: () =>
+  //     import('./components/pages/about/about.module').then(
+  //       (m) => m.AboutModule
+  //     ),
+  //   data: { breadcrumb: 'About Us' },
+  // },
+  // {
+  //   path: 'team',
+  //   loadChildren: () =>
+  //     import('./components/pages/team/team.module').then((m) => m.TeamModule),
+  //   data: { breadcrumb: 'Team' },
+  // },
+  // {
+  //   path: 'coming-soon',
+  //   loadChildren: () =>
+  //     import('./components/pages/coming-soon/coming-soon.module').then(
+  //       (m) => m.ComingSoonModule
+  //     ),
+  //   data: { breadcrumb: 'Coming Soon' },
+  // },
+  // {
+  //   path: 'error',
+  //   loadChildren: () =>
+  //     import('./components/pages/error-page/error-page.module').then(
+  //       (m) => m.ErrorPageModule
+  //     ),
+  //   data: { breadcrumb: 'Error 404' },
+  // },
+  // // Blog
+  // {
+  //   path: 'blog/search/:query',
+  //   loadChildren: () =>
+  //     import('./components/pages/blog-grid/blog-grid.module').then(
+  //       (m) => m.BlogGridModule
+  //     ),
+  //   data: { breadcrumb: 'Blog Grid' },
+  // },
+  // {
+  //   path: 'blog/cat/:catId',
+  //   loadChildren: () =>
+  //     import('./components/pages/blog-grid/blog-grid.module').then(
+  //       (m) => m.BlogGridModule
+  //     ),
+  //   data: { breadcrumb: 'Blog Grid' },
+  // },
+  // {
+  //   path: 'blog/tag/:tagId',
+  //   loadChildren: () =>
+  //     import('./components/pages/blog-grid/blog-grid.module').then(
+  //       (m) => m.BlogGridModule
+  //     ),
+  //   data: { breadcrumb: 'Blog Grid' },
+  // },
+  // {
+  //   path: 'blog/author/:authorId',
+  //   loadChildren: () =>
+  //     import('./components/pages/blog-grid/blog-grid.module').then(
+  //       (m) => m.BlogGridModule
+  //     ),
+  //   data: { breadcrumb: 'Blog Grid' },
+  // },
+  // {
+  //   path: 'blog-grid',
+  //   loadChildren: () =>
+  //     import('./components/pages/blog-grid/blog-grid.module').then(
+  //       (m) => m.BlogGridModule
+  //     ),
+  //   data: { breadcrumb: 'Blog Grid' },
+  // },
+  // {
+  //   path: 'blog-standard',
+  //   loadChildren: () =>
+  //     import('./components/pages/blog-list/blog-list.module').then(
+  //       (m) => m.BlogListModule
+  //     ),
+  //   data: { breadcrumb: 'Blog Standard' },
+  // },
+  // {
+  //   path: 'blog-details/:id',
+  //   loadChildren: () =>
+  //     import('./components/pages/blog-details/blog-details.module').then(
+  //       (m) => m.BlogDetailsModule
+  //     ),
+  //   data: { breadcrumb: 'Blog Details' },
+  // },
   // Contact
   {
     path: 'contact',

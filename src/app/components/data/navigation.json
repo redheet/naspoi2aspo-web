@@ -12,7 +12,24 @@
       {
         "id": 1.4,
         "link": "/i2aspo",
-        "linkText": "I2aspo"
+        "linkText": "I²ASPO"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "linkText": "Registration",
+    "child": true,
+    "submenu": [
+      {
+        "id": 2.1,
+        "link": "http://bit.ly/Pendaftaran_NASPO_2021",
+        "linkText": "Naspo"
+      },
+      {
+        "id": 2.2,
+        "link": "http://bit.ly/Registration-Form-I2ASPO-2021",
+        "linkText": "I²ASPO"
       }
     ]
   },
@@ -23,18 +40,13 @@
     "submenu": [
       {
         "id": 3.1,
-        "link": "http://localhost:4200/contact/https:/drive.google.com/file/d/1UJiMx5ZoMkOS1g9SYYvG7CpdSs_DyjAw/view",
+        "link": "https:/drive.google.com/file/d/1UJiMx5ZoMkOS1g9SYYvG7CpdSs_DyjAw/view",
         "linkText": "Naspo"
       },
       {
         "id": 3.2,
-        "link": "http://localhost:4200/contact/https:/drive.google.com/file/d/1bP9J9HXsdkQe9dGbhZb-VJJGBC5ZrhK5/view",
-        "linkText": "I2aspo"
-      },
-      {
-        "id": 3.3,
-        "link": "/pricing",
-        "linkText": "Pricing"
+        "link": "https:/drive.google.com/file/d/1bP9J9HXsdkQe9dGbhZb-VJJGBC5ZrhK5/view",
+        "linkText": "I²ASPO"
       }
     ]
   },
