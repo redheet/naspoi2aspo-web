@@ -58,7 +58,7 @@
                       (click)="trigger(item)"
                       ><i class="fas fa-angle-down"></i
                     ></span>
-                    <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
+                    <a href="{{ item.link }}" *ngIf="!item.child">{{
                       item.linkText
                     }}</a>
                     <ul
@@ -86,7 +86,7 @@
                           (click)="trigger(item)"
                           ><i class="fas fa-angle-down"></i
                         ></span>
-                        <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
+                        <a href="{{ item.link }}" *ngIf="!item.child">{{
                           item.linkText
                         }}</a>
                         <ul
@@ -102,7 +102,7 @@
                             "
                             *ngFor="let item of item.submenu"
                           >
-                            <a routerLink="{{ item.link }}">{{
+                            <a href="{{ item.link }}">{{
                               item.linkText
                             }}</a>
                           </li>
