@@ -58,9 +58,11 @@
                       (click)="trigger(item)"
                       ><i class="fas fa-angle-down"></i
                     ></span>
+                    <a href="https://drive.google.com/file/d/1UJiMx5ZoMkOS1g9SYYvG7CpdSs_DyjAw/view?usp=sharing" *ngIf="!item.child">{{ item.linkText }}</a>
                     <a href="https://drive.google.com/file/d/1bP9J9HXsdkQe9dGbhZb-VJJGBC5ZrhK5/view" *ngIf="!item.child">{{
                       item.linkText
                     }}</a>
+                    
                     <ul
                       class="sub-menu"
                       *ngIf="item.child"
