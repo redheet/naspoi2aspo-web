@@ -34,13 +34,25 @@
     ]
   },
   {
-    "id": 4,
-    "link": "/contact",
-    "linkText": "Guide Book NASPO"
+    "id": 3,
+    "linkText": "Pages",
+    "child": true,
+    "submenu": [
+      {
+        "id": 3.1,
+        "link": "",
+        "linkText": "Naspo"
+      },
+      {
+        "id": 3.2,
+        "link": "",
+        "linkText": "I²ASPO"
+      }
+    ]
   },
   {
     "id": 5,
-    "link": "/contact",
+    "link": "https://drive.google.com/file/d/1bP9J9HXsdkQe9dGbhZb-VJJGBC5ZrhK5/view",
     "linkText": "Guide Book I2ASPO"
   }
 ]
