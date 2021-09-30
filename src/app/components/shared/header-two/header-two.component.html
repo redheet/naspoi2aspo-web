@@ -58,11 +58,9 @@
                       (click)="trigger(item)"
                       ><i class="fas fa-angle-down"></i
                     ></span>
-                    
-                    <a href="https://drive.google.com/file/d/1bP9J9HXsdkQe9dGbhZb-VJJGBC5ZrhK5/view" *ngIf="!item.child">{{
+                    <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
                       item.linkText
                     }}</a>
-                    
                     <ul
                       class="sub-menu"
                       *ngIf="item.child"
@@ -104,7 +102,7 @@
                             "
                             *ngFor="let item of item.submenu"
                           >
-                            <a href="{{ item.link }}">{{
+                            <a routerLink="{{ item.link }}">{{
                               item.linkText
                             }}</a>
                           </li>
