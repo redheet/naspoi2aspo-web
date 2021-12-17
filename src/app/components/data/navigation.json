@@ -51,6 +51,23 @@
     ]
   },
   {
+    "id": 4,
+    "linkText": "Downloads",
+    "child": true,
+    "submenu": [
+      {
+        "id": 4.1,
+        "link": "https://drive.google.com/file/d/1_3HIthO4Gb_v_TrKXRua_Z8MnvukykXh/view?usp=sharing",
+        "linkText": "Winner Data Naspo"
+      },
+      {
+        "id": 4.2,
+        "link": "https://drive.google.com/file/d/1aMp4ZSWusWDFhBIxSOqHphLOezhFKPs-/view?usp=sharing",
+        "linkText": "Winner Data I²ASPO"
+      }
+    ]
+  },
+  {
     "id": 5,
     "link": "/contact",
     "linkText": "Contact"
