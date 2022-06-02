@@ -23,12 +23,12 @@
     "submenu": [
       {
         "id": 2.1,
-        "link": "http://bit.ly/Pendaftaran_NASPO_2021",
+        "link": "https://forms.gle/r5w9ZmqEARChJvYRA",
         "linkText": "Naspo"
       },
       {
         "id": 2.2,
-        "link": "http://bit.ly/Registration-Form-I2ASPO-2021",
+        "link": "https://forms.gle/e1iZU6m76bNn2YUf8",
         "linkText": "I²ASPO"
       }
     ]
@@ -40,37 +40,20 @@
     "submenu": [
       {
         "id": 3.1,
-        "link": "http:/drive.google.com/file/d/1UJiMx5ZoMkOS1g9SYYvG7CpdSs_DyjAw/view",
+        "link": "https://drive.google.com/file/d/1jN63vr5HsI3jRhi-Ju9i6ggeSHfZc15h/view?usp=sharing",
         "linkText": "Naspo"
       },
       {
         "id": 3.2,
-        "link": "http:/drive.google.com/file/d/1bP9J9HXsdkQe9dGbhZb-VJJGBC5ZrhK5/view",
+        "link": "https://drive.google.com/file/d/1u3bkSMql1vXmfDZymlONYTFzrW9wZwg6/view?usp=sharing",
         "linkText": "I²ASPO"
       }
     ]
   },
   {
     "id": 4,
-    "linkText": "Downloads",
-    "child": true,
-    "submenu": [
-      {
-        "id": 4.1,
-        "link": "https://drive.google.com/file/d/1_3HIthO4Gb_v_TrKXRua_Z8MnvukykXh/view?usp=sharing",
-        "linkText": "Winner Data Naspo"
-      },
-      {
-        "id": 4.2,
-        "link": "https://drive.google.com/file/d/1aMp4ZSWusWDFhBIxSOqHphLOezhFKPs-/view?usp=sharing",
-        "linkText": "Winner Data I²ASPO"
-      },
-      {
-        "id": 4.3,
-        "link": "https://drive.google.com/drive/folders/1JhSaP33omTfA7ou6AkcVRqrwiB88d6WL?usp=sharing",
-        "linkText": "Supervisor Certificate"
-      }
-    ]
+    "link": "/gallery",
+    "linkText": "Gallery"
   },
   {
     "id": 5,

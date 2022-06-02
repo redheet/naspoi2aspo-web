@@ -1,48 +1,57 @@
-<section class="our-team-area our-team-area-v2 pt-130 pb-100"
-    [style.background-image]="'url(assets/img/services/dots-pattern-bg.png)'">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col">
-                <div class="section-title text-center mb-70">
-                    <div class="section-heading-tag">
-                        <span class="single-heading-tag">Creative Team</span>
-                    </div>
-                    <h2>We Have Professional <br class="d-none d-md-block"> Creative Team</h2>
-                </div>
-            </div> <!-- /.col-lg-8 -->
-        </div> <!-- /.row -->
-        <div class="team-member-content">
-            <div class="row">
-                <!-- Data -->
-                <div class="col-lg-3 col-md-6"
-                    *ngFor="let item of teamblock | paginate: { itemsPerPage: 8, currentPage: page }">
-                    <div class="single-team-member single-team-member-v2 wow fadeInUp" data-wow-delay="700ms"
-                        data-wow-duration="2000ms">
-                        <div class="team-member-thumb">
-                            <img [src]="item.image" [alt]="item.name">
-                        </div>
-                        <div class="team-member-bio">
-                            <h5 class="team-member-name">
-                                {{item.name}}
-                            </h5>
-                            <p class="team-member-role">
-                                {{item.post}}
-                            </p>
-                            <div class="social-links">
-                                <ul>
-                                    <li *ngFor="let social of item.social"><a routerLink="{{social.link}}"><i
-                                                [class]="social.icon"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Data -->
-            </div> <!-- /.row -->
-            <!-- Pagination -->
-            <pagination-controls (pageChange)="page = $event" responsive="true" previousLabel="<" nextLabel=">">
-            </pagination-controls>
-            <!-- Pagination -->
-        </div> <!-- /.team-member-content -->
-    </div> <!-- /.container -->
+<section
+  class="our-team-area our-team-area-v2 pt-130 pb-100"
+  [style.background-image]="'url(assets/img/services/dots-pattern-bg.png)'"
+>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="section-title text-center mb-70">
+          <div class="section-heading-tag">
+            <span class="single-heading-tag">Story Event</span>
+          </div>
+          <h2>
+            Our Success Story <br class="d-none d-md-block" />
+            Event
+          </h2>
+        </div>
+      </div>
+      <!-- /.col-lg-8 -->
+    </div>
+    <!-- /.row -->
+    <div class="team-member-content">
+      <div class="row">
+        <!-- Data -->
+        <div
+          class="col-lg-3 col-md-6"
+          *ngFor="
+            let item of teamblock
+              | paginate: { itemsPerPage: 8, currentPage: page }
+          "
+        >
+          <div
+            class="single-team-member single-team-member-v2 wow"
+            data-wow-delay="700ms"
+            data-wow-duration="2000ms"
+          >
+            <div class="team-member-thumb">
+              <img [src]="item.image" [alt]="item.name" />
+            </div>
+          </div>
+        </div>
+        <!-- Data -->
+      </div>
+      <!-- /.row -->
+      <!-- Pagination -->
+      <!-- <pagination-controls
+        (pageChange)="page = $event"
+        responsive="true"
+        previousLabel="<"
+        nextLabel=">"
+      >
+      </pagination-controls> -->
+      <!-- Pagination -->
+    </div>
+    <!-- /.team-member-content -->
+  </div>
+  <!-- /.container -->
 </section>

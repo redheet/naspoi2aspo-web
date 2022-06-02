@@ -5,71 +5,53 @@
     "plantitle": "Indonesian Participant Online",
     "icon": "assets/img/pricing/pricing-table-icon.png",
     "curency": "Rp",
-    "price": 500.0,
+    "price": 850.0,
     "period": "Team",
     "includes": [
       "Shipping medals",
       "1 medal / team and certificate for each person in the team."
     ],
-    "excludes": [
-      "Free access Rumah Riset Application for 6 months, and consultation with a mentor for 1 month."
-    ],
+    "excludes": [],
     "btnstyle": "bg-burning-orange"
   },
   {
     "id": 2,
-    "planclass": "Indonesian Participant Online",
-    "plantitle": "Indonesian Participant Online",
+    "planclass": "International Participant Online",
+    "plantitle": "International Participant Online",
     "icon": "assets/img/pricing/pricing-table-icon.png",
-    "curency": "Rp",
-    "price": 600.0,
+    "curency": "$",
+    "price": "50",
     "period": "Team",
     "includes": [
-      "Shipping medals",
-      "1 medal / team and certificate for each person in the team.",
-      "Free access Rumah Riset Application for 6 months, and consultation with a mentor for 1 month."
+      "Students (Elementary,Secondary,University) (each participant will get only e-certificate)."
     ],
     "excludes": [],
     "btnstyle": "bg-ocean-blue-gradient"
   },
   {
     "id": 3,
-    "planclass": "International Participant Online",
-    "plantitle": "International Participant Online",
+    "planclass": "International Participant Offline",
+    "plantitle": "International Participant Offline",
     "icon": "assets/img/pricing/pricing-table-icon.png",
-    "curency": "$",
-    "price": "35",
+    "curency": "Rp",
+    "price": "2,500 jt",
     "period": "Team",
-    "includes": ["E-Certificate Only"],
+    "includes": [
+      "T-Shirt for 3 people",
+      "Booth / Roll banners, tables and chairs",
+      "Lunch for 3 people x 2 days (at the time of judging)",
+      "1 medal / team and certificate for each person on the team."
+    ],
     "excludes": [],
     "btnstyle": "bg-magenta"
   },
   {
     "id": 4,
-    "planclass": "Indonesian Participant Offline",
-    "plantitle": "Indonesian Participant Offline",
-    "icon": "assets/img/pricing/pricing-table-icon.png",
-    "curency": "Rp",
-    "price": "2,350 jt",
-    "period": "Team",
-    "includes": [
-      "T-Shirt for 3 people",
-      "Booth / Roll banners, tables and chairs",
-      "Lunch for 3 people x 2 days (at the time of judging)",
-      "1 medal / team and certificate for each person on the team."
-    ],
-    "excludes": [
-      "Free access Rumah Riset Application for 6 months, and consultation with a mentor for 1 month."
-    ],
-    "btnstyle": "bg-tuna"
-  },
-  {
-    "id": 5,
     "planclass": "International Participant Offline",
     "plantitle": "International Participant Offline",
     "icon": "assets/img/pricing/pricing-table-icon.png",
     "curency": "$",
-    "price": 250.0,
+    "price": 300.0,
     "period": "Team",
     "includes": [
       "T-Shirt for 3 people",
@@ -77,27 +59,21 @@
       "Lunch for 3 people x 2 days (at the time of judging)",
       "1 medal / team and certificate for each person on the team."
     ],
-    "excludes": [
-      "Free access Rumah Riset Application for 6 months, and consultation with a mentor for 1 month."
-    ],
-    "btnstyle": "bg-ocean-blue"
+    "excludes": [],
+    "btnstyle": "bg-tuna"
   },
   {
-    "id": 6,
-    "plantitle": "Indonesian Participant Offline",
-    "planclass": "Indonesian Participant Offline",
+    "id": 5,
+    "planclass": "Full Pack International",
+    "plantitle": "Full Pack International",
     "icon": "assets/img/pricing/pricing-table-icon.png",
-    "curency": "Rp",
-    "price": "2,450 jt",
+    "curency": "$",
+    "price": 500.0,
     "period": "Team",
     "includes": [
-      "T-Shirt for 3 people",
-      "Booth / Roll banners, tables and chairs",
-      "Lunch for 3 people x 2 days (at the time of judging)",
-      "1 medal / team and certificate for each person on the team.",
-      "Free access Rumah Riset Application for 6 months, and consultation with a mentor for 1 month."
+      "Pickup from Airport, Local Transportation, Hotels, Meals, Excursion."
     ],
     "excludes": [],
-    "btnstyle": "bg-blue-chalk"
+    "btnstyle": "bg-ocean-blue"
   }
 ]

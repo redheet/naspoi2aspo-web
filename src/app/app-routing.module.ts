@@ -84,12 +84,12 @@ const routes: Routes = [
   //     ),
   //   data: { breadcrumb: 'About Us' },
   // },
-  // {
-  //   path: 'team',
-  //   loadChildren: () =>
-  //     import('./components/pages/team/team.module').then((m) => m.TeamModule),
-  //   data: { breadcrumb: 'Team' },
-  // },
+  {
+    path: 'gallery',
+    loadChildren: () =>
+      import('./components/pages/team/team.module').then((m) => m.TeamModule),
+    data: { breadcrumb: 'Gallery' },
+  },
   // {
   //   path: 'coming-soon',
   //   loadChildren: () =>

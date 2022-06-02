@@ -1,70 +1,32 @@
 [
   {
     "id": 1,
-    "planclass": "Online Single",
-    "plantitle": "Online Single",
+    "planclass": "Online",
+    "plantitle": "Online",
     "icon": "assets/img/pricing/pricing-table-icon.png",
     "curency": "Rp",
-    "price": 350.0,
+    "price": 500.0,
     "period": "Team",
     "includes": [
       "Biaya pengiriman medali",
       "1 medali/ team dan sertifikat untuk setiap orang yang berada dalam team tersebut"
     ],
-    "excludes": [
-      "Free akses Aplikasi Rumah Riset selama 6 bulan, dan konsultasi dengan mentor selama 1 bulan."
-    ],
+    "excludes": [],
     "btnstyle": "bg-burning-orange"
   },
   {
     "id": 2,
-    "planclass": "Online Full",
-    "plantitle": "Online Full",
+    "planclass": "Offline",
+    "plantitle": "Offline",
     "icon": "assets/img/pricing/pricing-table-icon.png",
     "curency": "Rp",
-    "price": 450.0,
-    "period": "Team",
-    "includes": [
-      "Biaya pengiriman medali",
-      "1 medali/ team dan sertifikat untuk setiap orang yang berada dalam team tersebut",
-      "Free akses Aplikasi Rumah Riset selama 6 bulan, dan konsultasi dengan mentor selama 1 bulan."
-    ],
-    "excludes": [],
-    "btnstyle": "bg-ocean-blue-gradient"
-  },
-  {
-    "id": 3,
-    "planclass": "Offline Single",
-    "plantitle": "Offline Single",
-    "icon": "assets/img/pricing/pricing-table-icon.png",
-    "curency": "Rp",
-    "price": "2,350 jt",
+    "price": "2,500 jt",
     "period": "Team",
     "includes": [
       "T-Shirt untuk 3 orang",
       "Booth/Roll banner, meja dan kursi",
-      "Makan siang untuk 3 orang x 2 hari (pada saat penjurian)",
-      "1 medali/ team dan sertifikat untuk setiap orang yang berada dalam team tersebut."
-    ],
-    "excludes": [
-      "Free akses Aplikasi Rumah Riset selama 6 bulan, dan konsultasi dengan mentor selama 1 bulan."
-    ],
-    "btnstyle": "bg-magenta"
-  },
-  {
-    "id": 4,
-    "planclass": "Offline Full",
-    "plantitle": "Offline Full",
-    "icon": "assets/img/pricing/pricing-table-icon.png",
-    "curency": "Rp",
-    "price": "2,450 jt",
-    "period": "Team",
-    "includes": [
-      "T-Shirt untuk 3 orang",
-      "Booth/Roll banner, meja dan kursi",
-      "Makan siang untuk 3 orang x 2 hari (pada saat penjurian)",
-      "1 medali/ team dan sertifikat untuk setiap orang yang berada dalam team tersebut.",
-      "Free akses Aplikasi Rumah Riset selama 6 bulan, dan konsultasi dengan mentor selama 1 bulan."
+      "Makan siang untuk 3 orang x 1 hari (pada saat penjurian) dan snack untuk 3 orang x 2 hari.",
+      "1 medali/ team dan sertifikat untuk setiap orang yang berada dalam team tersebut"
     ],
     "excludes": [],
     "btnstyle": "bg-ocean-blue-gradient"
